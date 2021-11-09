@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# Desenvolvido pelo William Santos
+# contato: thespation@gmail.com ou https://github.com/thespation
 
 clear
 ##--------------------------------Funções utilizadas no script--------------------------------##
