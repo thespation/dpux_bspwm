@@ -13,6 +13,7 @@ function VERIF_DISTRIB()
 	if [[ $INXI = *Xfce* && $INXI = *21.10* && $INXI = *Ubuntu* ]]; then
 			inxi -S
 			sleep 2s
+			echo "#--------------------Sistema suportado, instalação seguirá--------------------#"
 			echo ""
 			ATUALIZAR
 			KSUPERKEY
@@ -22,6 +23,7 @@ function VERIF_DISTRIB()
 	elif [[ $ID = "Distributor ID:	Pop" && $RELEASE = "Release:	21.04" ]]; then
 			inxi -S
 			sleep 2s
+			echo "#--------------------Sistema suportado, instalação seguirá--------------------#"
 			echo ""
 			ATUALIZAR
 			KSUPERKEY
@@ -31,6 +33,7 @@ function VERIF_DISTRIB()
 		elif [[ $INXI = *Xfce* && $INXI = *bullseye* && $INXI = *debian* ]]; then
 			inxi -S
 			sleep 2s
+			echo "#--------------------Sistema suportado, instalação seguirá--------------------#"
 			echo ""
 			ATUALIZAR
 			APPS_XFCE
@@ -39,6 +42,7 @@ function VERIF_DISTRIB()
 		elif [[ $INXI = *GNOME* && $INXI = *21.10* && $INXI = *Ubuntu* ]]; then
 			inxi -S
 			sleep 2s
+			echo "#--------------------Sistema suportado, instalação seguirá--------------------#"
 			echo ""
 			ATUALIZAR
 			KSUPERKEY
@@ -294,7 +298,4 @@ function NOTF_FALHA()
 ##--------------------------------Funções utilizadas no script--------------------------------##
 	clear
 	echo "#---------------Esse assistente instalará bspwm em sua máquina---------------#".
-	echo "#-------Caso não tenha inxi instalado em sua máquina, será instalado---------#".
-	sudo apt install inxi -y
-	
 	VERIF_DISTRIB
