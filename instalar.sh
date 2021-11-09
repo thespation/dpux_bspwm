@@ -292,6 +292,7 @@ function NOTF_FALHA()
 	}
 		
 ##--------------------------------Funções utilizadas no script--------------------------------##
+	clear
 	echo "#---------------Esse assistente instalará bspwm em sua máquina---------------#".
 	echo "#-------Caso não tenha inxi instalado em sua máquina, será instalado---------#".
 	sudo apt install inxi -y
