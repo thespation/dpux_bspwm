@@ -227,6 +227,7 @@ function PERSONA_XUBUNTU()
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/Thunar/ ~/.config
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/sxhkd/ ~/.config
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/powermenu ~/.config/bspwm/rofi/bin
+				cp -rf /tmp/dpux_bspwm/home/xubuntu/config.conf ~/.config/neofetch
 				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/nordico.png /usr/share/xfce4/backdrops/
 				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/lightdm-gtk-greeter.conf /etc/lightdm/
 				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/apps_as_root.sh /usr/local/bin
@@ -269,6 +270,7 @@ function PERSONA_UBUNTU()
 				cp -rf /tmp/dpux_bspwm/home/ubuntu/.fehbg $HOME
 				cp -rf /tmp/dpux_bspwm/home/pop/powermenu ~/.config/bspwm/rofi/bin
 				cp -rf /tmp/dpux_bspwm/home/pop/sxhkd/ ~/.config
+				cp -rf /tmp/dpux_bspwm/home/ubuntu/config.conf ~/.config/neofetch
 				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/nordico.png /usr/share/backgrounds/
 			clear
 			echo "#--------------------Personalizações para Ubuntu copiadas--------------------#"
