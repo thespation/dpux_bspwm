@@ -208,6 +208,7 @@ function PERSONA_POP()
 				cp -rf /tmp/dpux_bspwm/home/pop/.fehbg $HOME
 				cp -rf /tmp/dpux_bspwm/home/pop/powermenu ~/.config/bspwm/rofi/bin
 				cp -rf /tmp/dpux_bspwm/home/pop/sxhkd/ ~/.config
+				mkdir ~/.config/neofetch
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/config.conf ~/.config/neofetch
 				sudo cp -rf /tmp/dpux_bspwm/home/pop/nordico.png /usr/share/backgrounds/pop/
 				sudo rm -rf /usr/share/fonts/truetype/arphic
