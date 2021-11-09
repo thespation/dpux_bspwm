@@ -293,6 +293,7 @@ function NOTF_FALHA()
 		echo "#-----------------------------Debian 11 (xfce)--------------------------------#"
 		echo "#------------------------------Pop!_Os 21.04----------------------------------#"
 		echo "#--------------------------Ubuntu ou Xubuntu 21.10----------------------------#"
+		echo "#----Caso esteja usando uma das citadas, é necessário ter 'inxi' instalado----#"
 	}
 		
 ##--------------------------------Funções utilizadas no script--------------------------------##
