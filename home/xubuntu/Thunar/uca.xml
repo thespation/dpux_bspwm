@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>go-parent-folder</icon>
+	<name>Abrir como root</name>
+	<unique-id>1624533377465774-1</unique-id>
+	<command>pkexec thunar %f</command>
+	<description>Abrir diretório como root</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>dialog-scripts</icon>
+	<name>Abrir terminal aqui</name>
+	<unique-id>1624468705519905-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Exemplo de uma ação personalizada</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>kr_comparedirs</icon>
+	<name>Comparar</name>
+	<unique-id>1624533653979226-3</unique-id>
+	<command>meld %F</command>
+	<description>Comparar arquivos e diretório com Meld</description>
+	<patterns>*</patterns>
+	<directories/>
+	<text-files/>
+</action>
+<action>
+	<icon>document-edit-sign</icon>
+	<name>Editar como root</name>
+	<unique-id>1624533584185359-2</unique-id>
+	<command>apps_as_root.sh &apos;geany %f&apos;</command>
+	<description>Editar arquivo como root</description>
+	<patterns>*</patterns>
+	<text-files/>
+</action>
+<action>
+	<icon>find-location</icon>
+	<name>Localizar</name>
+	<unique-id>1624565100396327-1</unique-id>
+	<command>catfish %f</command>
+	<description>Localizar arquivo ou pasta</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>kr_diskusage</icon>
+	<name>Uso de disco</name>
+	<unique-id>1624533766857844-4</unique-id>
+	<command>baobab %f</command>
+	<description>Ver tamanho de diretórios</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+</actions>
