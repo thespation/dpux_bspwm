@@ -332,5 +332,5 @@ function NOTF_FALHA()
 		
 ##--------------------------------Funções utilizadas no script--------------------------------##
 	clear
-	echo "#---------------Esse assistente instalará bspwm em sua máquina---------------#".
+		echo "#---------------Esse assistente instalará bspwm em sua máquina---------------#"
 	VERIF_DISTRIB
