@@ -297,7 +297,6 @@ declare -f PERSONA_DGNOME
 function PERSONA_DGNOME()
 	{
 			clear
-			echo "#---------------------Copiar personalizações para Ubuntu---------------------#"
 			echo "#------------------Copiar personalizações para Debian Gnome------------------#"
 				cp -rf /tmp/dpux_bspwm/home/debian/.fehbg $HOME
 				cp -rf /tmp/dpux_bspwm/home/pop/powermenu ~/.config/bspwm/rofi/bin
