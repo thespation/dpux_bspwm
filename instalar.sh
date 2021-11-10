@@ -86,7 +86,7 @@ declare -f BSPWM
 function BSPWM()
 	{
 			echo "#---------------------------Instalando base BSPWM----------------------------#"
-				sudo apt install bspwm sxhkd rofi picom polybar dunst -y
+				sudo apt install bspwm sxhkd rofi compton polybar dunst -y
 				clear
 			echo "#---------------------------Base BSPWM instalada-----------------------------#"
 				sleep 2s
