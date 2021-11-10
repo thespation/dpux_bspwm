@@ -209,7 +209,7 @@ function PERSONA_POP()
 				cp -rf /tmp/dpux_bspwm/home/pop/powermenu ~/.config/bspwm/rofi/bin
 				cp -rf /tmp/dpux_bspwm/home/pop/sxhkd/ ~/.config
 				mkdir ~/.config/neofetch
-				cp -rf /tmp/dpux_bspwm/home/xubuntu/config.conf ~/.config/neofetch
+				cp -rf /tmp/dpux_bspwm/home/pop/config.conf ~/.config/neofetch
 				sudo cp -rf /tmp/dpux_bspwm/home/pop/nordico.png /usr/share/backgrounds/pop/
 				sudo rm -rf /usr/share/fonts/truetype/arphic
 			clear
@@ -229,6 +229,7 @@ function PERSONA_XUBUNTU()
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/Thunar/ ~/.config
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/sxhkd/ ~/.config
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/powermenu ~/.config/bspwm/rofi/bin
+				mkdir ~/.config/neofetch
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/config.conf ~/.config/neofetch
 				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/nordico.png /usr/share/xfce4/backdrops/
 				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/lightdm-gtk-greeter.conf /etc/lightdm/
@@ -272,6 +273,7 @@ function PERSONA_UBUNTU()
 				cp -rf /tmp/dpux_bspwm/home/ubuntu/.fehbg $HOME
 				cp -rf /tmp/dpux_bspwm/home/pop/powermenu ~/.config/bspwm/rofi/bin
 				cp -rf /tmp/dpux_bspwm/home/pop/sxhkd/ ~/.config
+				mkdir ~/.config/neofetch
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/config.conf ~/.config/neofetch
 				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/nordico.png /usr/share/backgrounds/
 			clear
