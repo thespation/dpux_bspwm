@@ -37,8 +37,9 @@ function VERIF_DISTRIB()
 			echo ""
 			ATUALIZAR
 			APPS_XFCE
-			APPS_DEBIAN
-			
+			KSUPERKEY
+			PERSONA_DEBIAN
+						
 		elif [[ $INXI = *GNOME* && $INXI = *21.10* && $INXI = *Ubuntu* ]]; then
 			inxi -S
 			sleep 2s
@@ -48,6 +49,7 @@ function VERIF_DISTRIB()
 			KSUPERKEY
 			APPS_POP
 			PERSONA_UBUNTU
+			
 		elif [[ $INXI = *GNOME* && "Distributor ID:	Debian" && ($RELEASE = "Release:	testing" || $RELEASE = "Release:	11") ]]; then
 			inxi -S
 			sleep 2s
@@ -98,8 +100,12 @@ declare -f KSUPERKEY
 function KSUPERKEY()
 	{
 			echo "#----------------------------Habilitar ksuperkey-----------------------------#"
-				sudo apt install snapd -y && sudo snap install ksuperkey &&
-				clear &&
+			sudo apt install gcc make libx11-dev libxtst-dev pkg-config -y
+			cd /tmp && git clone https://github.com/hanschen/ksuperkey.git
+			cd ksuperkey
+			make
+			sudo make install &&
+			clear &&
 			echo "#---------------------------Ksuperkey habilitado-----------------------------#"
 				sleep 2s
 	}
@@ -137,22 +143,6 @@ function APPS_POP()
 			clear &&
 			echo "#-------------------------Apps para Gnome instalados-------------------------#"
 				sleep 2s
-	}
-	
-#--Função: Instalar aplicativos complementares no Debian--#
-declare -f APPS_DEBIAN
-function APPS_DEBIAN()
-	{
-			echo "#------------------------------Apps para Debian------------------------------#"
-			sudo apt install gcc make libx11-dev libxtst-dev pkg-config -y
-			cd /tmp && git clone https://github.com/hanschen/ksuperkey.git
-			cd ksuperkey
-			make
-			sudo make install &&
-			clear &&
-			echo "#-------------------------Apps para Debian instalados------------------------#"
-				sleep 2s
-			PERSONA_DEBIAN
 	}
 	
 #--Função: Usar personalizações para: fonts, configs, ícones, themas, polybar, dunst e rofi--#
