@@ -35,14 +35,14 @@ Caso queira executar por conta própria ou modificar na intenção de moldar con
 ![temas](https://user-images.githubusercontent.com/84329097/141335499-8e8b4683-a1d0-4727-9c66-58f3e452f491.gif)
 
 ### Menu rofi
-Podendo mudar a cor de acordo com o tema selicionado:
+Podendo mudar a cor de acordo com o tema selecionado:
 
 ![rofi](https://user-images.githubusercontent.com/84329097/141335969-4cc5440c-342c-431b-bd89-693efd947a4a.gif)
 
 ##
 
 ### Troca de tema para LightDM
-Caso esse escript seja rodado no Debian Xfce ou no Xubuntu, será modificado o tema do gestor de login, ficando:
+Caso esse script seja rodado no Debian Xfce ou no Xubuntu, será modificado o tema do gestor de login, ficando:
 
 ![01](https://user-images.githubusercontent.com/84329097/141336377-58b7b39c-62a2-430d-aad8-c7388b7ae75d.png)
 
@@ -73,7 +73,7 @@ Para que seja realizada a instalação correta, é necessário ter instalado `in
 ### Teclas de atalhos
 Para utilização do *bspwm* vai notar que muitas das vezes o teclado é o nosso melhor amigo, para isso precisamos aprender alguns atalhos interessantes para nossa utilização.
 
-Caso queira personalizar algum, acrecentar ou remover, pode ser realizado editando o arquivo: `~/.config/sxhkd/sxhkdrc`.
+Caso queira personalizar algum, acrescentar ou remover, pode ser realizado editando o arquivo: `~/.config/sxhkd/sxhkdrc`.
 
 Seguem os atalho já configurados:
 
@@ -90,7 +90,7 @@ Legenda: <kbd> W</kbd> = Tecla Windows
 <kbd>W + TAB</kbd> - Volta para última área de trabalho aberta <br>
 <kbd>W + Shift + 1-8</kbd> - Envia a janela em foco para a área desejada <br>
 <kbd>W + Ctrol + ←/→/↑ /↓ </kbd> - Expande a janela em foco <br>
-<kbd>W + Alt + ←/→/↑ /↓</kbd> - Dininui a janela em foco <br>
+<kbd>W + Alt + ←/→/↑ /↓</kbd> - Diminuir a janela em foco <br>
 <kbd>W + C</kbd> - Fecha janela em foco <br>
 <kbd>Ctrl + Alt +  ←/→</kbd> - Troca de área de trabalho <br>
 <kbd>W + x</kbd> - Menu com opções de desligamento <br>
