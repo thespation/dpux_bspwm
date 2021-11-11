@@ -39,23 +39,64 @@ Podendo mudar a cor de acordo com o tema selicionado:
 
 ![rofi](https://user-images.githubusercontent.com/84329097/141335969-4cc5440c-342c-431b-bd89-693efd947a4a.gif)
 
+##
+
 ### Troca de tema para LightDM
-Caso esse escript sera rodado no Debian Xfce ou no Xubuntu, será modificado o tema do gestor de login, ficando:
+Caso esse escript seja rodado no Debian Xfce ou no Xubuntu, será modificado o tema do gestor de login, ficando:
 
 ![01](https://user-images.githubusercontent.com/84329097/141336377-58b7b39c-62a2-430d-aad8-c7388b7ae75d.png)
 
-Observação: o Xubuntu é configurado para usar o papel de parece no LightDM, com isso usará o papel de parede da sessão.
+Observação: o Xubuntu é configurado para usar o papel de parede da sessão no LightDM, com isso usará o papel de parede da sessão.
 
 ##
 
 ### Dependências
-Para que seja realizada a instalação correta, é necesário ter instalado `inxi` em seu sistema, assim como o `git`. Caso a instalação seja realizada pelo comando apresentado acima, será instalado automaticamente.
+Para que seja realizada a instalação correta, é necessário ter instalado `inxi` em seu sistema, assim como o `git`. Caso a instalação seja realizada pelo comando apresentado acima, será instalado automaticamente.
+
+##
 
 ### O que será instalado
-Pacotes comuns a todas as distros: bspwm, sxhkd, rofi, compton, polybar, dunst, [ksuperkey](https://github.com/hanschen/ksuperkey), neofetch, htop, feh, lxappearance, geany, dmenu, nm-tray, xfconf, xsettingsd, xfce4-power-manager, zenity, git.
+> Pacotes comuns a todas as distros:
 
-Pacotes destinados as distros xfce: thunar-archive-plugin, catfish, baobab, meld, language-selector-gnome* (somente para o Xubuntu).
+* bspwm, sxhkd, rofi, compton, polybar, dunst, [ksuperkey](https://github.com/hanschen/ksuperkey), neofetch, htop, feh, lxappearance, geany, dmenu, nm-tray, xfconf, xsettingsd, xfce4-power-manager, zenity, git.
 
-Pacotes destinados as distros GNOME: mate-polkit, i3lock.
+>Pacotes destinados as distros xfce:
 
+* thunar-archive-plugin, catfish, baobab, meld, language-selector-gnome* (somente para o Xubuntu).
+
+>Pacotes destinados as distros GNOME:
+
+* mate-polkit, i3lock.
+
+##
+
+### Teclas de atalhos
+Para utilização do *bspwm* vai notar que muitas das vezes o teclado é o nosso melhor amigo, para isso precisamos aprender alguns atalhos interessantes para nossa utilização.
+
+Caso queira personalizar algum, acrecentar ou remover, pode ser realizado editando o arquivo: `~/.config/sxhkd/sxhkdrc`.
+
+Seguem os atalho já configurados:
+
+Legenda: <kbd> W</kbd> = Tecla Windows
+<kbd> W</kbd> - Menu de aplicativos <br>
+<kbd> Ctrl + W + t</kbd> - Seletor de tema <br>
+<kbd> W + w </kbd> - Mostra programas abertos (tecla Windows mais a tecla "w") <br>
+<kbd> W + 1-8</kbd> - Troca de área de trabalho <br>
+<kbd> W + Shift + 1-8</kbd> - Envia app em foco para a área de trabalho desejada <br>
+<kbd>W + Enter</kbd> - Terminal <br>
+<kbd>W + Barra de espaço</kbd> - troca entre modo tiling / floating <br>
+<kbd>W + F</kbd> - modo uma janela em tela cheia <br>
+<kbd>W + H/V/Q</kbd> - Prepara a divisão do app na Horizontal, Vertical ou Cancela <br>
+<kbd>W + TAB</kbd> - Volta para última área de trabalho aberta <br>
+<kbd>W + Shift + 1-8</kbd> - Envia a janela em foco para a área desejada <br>
+<kbd>W + Ctrol + ←/→/↑ /↓ </kbd> - Expande a janela em foco <br>
+<kbd>W + Alt + ←/→/↑ /↓</kbd> - Dininui a janela em foco <br>
+<kbd>W + C</kbd> - Fecha janela em foco <br>
+<kbd>Ctrl + Alt +  ←/→</kbd> - Troca de área de trabalho <br>
+<kbd>W + x</kbd> - Menu com opções de desligamento <br>
+
+##
+
+### Créditos:
+Tanto os menus, polybar, temas e configurações para bspwm quanto sxhkd foram elaborados pelo [Aditya Shakya](https://github.com/adi1090x) que disponibilizou em seu Github ([polybar](https://github.com/adi1090x/polybar-themes) e [rofi](https://github.com/adi1090x/rofi)).
 
