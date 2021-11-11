@@ -31,7 +31,7 @@ Caso queira executar por conta própria ou modificar na intenção de moldar con
 ## Temas e customizações disponíveis
 
 #### Temas para o BSPWM
-Utilize o atalho <kbd> Ctrl + W + t</kbd> para seleiconar o tema desejado:<br>
+Utilize o atalho <kbd> Ctrl + alt + t</kbd> para seleiconar o tema desejado:<br>
 
 ![temas](https://user-images.githubusercontent.com/84329097/141335499-8e8b4683-a1d0-4727-9c66-58f3e452f491.gif)
 
