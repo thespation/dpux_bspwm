@@ -30,7 +30,7 @@ function VERIF_DISTRIB()
 			APPS_POP
 			PERSONA_POP
 
-		elif [[ $INXI = *Xfce* && $INXI = *bullseye* && $INXI = *debian* ]]; then
+		elif [[ $INXI = *Xfce* && ($INXI = *bullseye* || *bookworm*) && $INXI = *debian* ]]; then
 			inxi -S
 			sleep 2s
 			echo "#--------------------Sistema suportado, instalação seguirá--------------------#"
