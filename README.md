@@ -1,20 +1,17 @@
-# dpux_bspwm
+## Sobre
+Esse script possui a intenção de instalar o gerenciador de janelas [bspwm](https://github.com/baskerville/bspwm) em conjunto com [polybar](https://github.com/polybar/polybar) e [rofi](https://github.com/davatorium/rofi).
 
-### Instalação
+##
+
+## Instalação
 Em seu terminal, rode o comando abaixo para começar a instalação:
 
 ```bash
 sudo apt install git inxi -y && cd /tmp && git clone https://github.com/thespation/dpux_bspwm && chmod 755 dpux_bspwm/* -R && cd dpux_bspwm/ && ./instalar.sh
 ```
-
 ##
 
-### Sobre
-Esse script possui a intenção de instalar o gerenciador de janelas [bspwm](https://github.com/baskerville/bspwm) em conjunto com [polybar](https://github.com/polybar/polybar) e [rofi](https://github.com/davatorium/rofi).
-
-##
-
-### Sistemas suportados
+## Sistemas suportados
 
 Para que o script rode corretamente, é necessário ter o sistema, versão e DE abaixo:
 
@@ -30,18 +27,18 @@ Caso queira executar por conta própria ou modificar na intenção de moldar con
 
 ##
 
-### Telas dos temas disponíveis
+## Telas dos temas disponíveis
 
 ![temas](https://user-images.githubusercontent.com/84329097/141335499-8e8b4683-a1d0-4727-9c66-58f3e452f491.gif)
 
-### Menu rofi
+## Menu rofi
 Podendo mudar a cor de acordo com o tema selecionado:
 
 ![rofi](https://user-images.githubusercontent.com/84329097/141335969-4cc5440c-342c-431b-bd89-693efd947a4a.gif)
 
 ##
 
-### Troca de tema para LightDM
+## Troca de tema para LightDM
 Caso esse script seja rodado no Debian Xfce ou no Xubuntu, será modificado o tema do gestor de login, ficando:
 
 ![01](https://user-images.githubusercontent.com/84329097/141336377-58b7b39c-62a2-430d-aad8-c7388b7ae75d.png)
@@ -50,7 +47,7 @@ Observação: o Xubuntu é configurado para usar o papel de parede da sessão no
 
 ##
 
-### Dependências
+## Dependências
 Para que seja realizada a instalação correta, é necessário ter instalado `inxi` em seu sistema, assim como o `git`. Caso a instalação seja realizada pelo comando apresentado acima, será instalado automaticamente.
 
 ##
@@ -70,7 +67,7 @@ Para que seja realizada a instalação correta, é necessário ter instalado `in
 
 ##
 
-### Teclas de atalhos
+## Teclas de atalhos
 Para utilização do *bspwm* vai notar que muitas das vezes o teclado é o nosso melhor amigo, para isso precisamos aprender alguns atalhos interessantes para nossa utilização.
 
 Caso queira personalizar algum, acrescentar ou remover, pode ser realizado editando o arquivo: `~/.config/sxhkd/sxhkdrc`.
@@ -97,6 +94,6 @@ Legenda: <kbd> W</kbd> = Tecla Windows <br>
 
 ##
 
-### Créditos:
+## Créditos:
 Tanto os menus, polybar, temas e configurações para bspwm quanto sxhkd foram elaborados pelo [Aditya Shakya](https://github.com/adi1090x) que disponibilizou em seu Github ([polybar](https://github.com/adi1090x/polybar-themes) e [rofi](https://github.com/adi1090x/rofi)).
 
