@@ -13,7 +13,7 @@ sudo apt install git inxi -y && cd /tmp && git clone https://github.com/thespati
 ```
 <hr>
 
-###Sistemas suportados
+### Sistemas suportados
 Para que o script rode corretamente, é necessário ter o sistema, versão e DE abaixo:
 
 |   Sistema   | Versão | DE |
@@ -30,7 +30,7 @@ Caso queira executar por conta própria ou modificar na intenção de moldar con
 
 ## Temas e customizações disponíveis
 
-### Temas para o BSPWM
+#### Temas para o BSPWM
 Utilize o atalho <kbd> Ctrl + W + t</kbd> para seleiconar o tema desejado:<br>
 
 ![temas](https://user-images.githubusercontent.com/84329097/141335499-8e8b4683-a1d0-4727-9c66-58f3e452f491.gif)
