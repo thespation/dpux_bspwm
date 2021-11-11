@@ -103,7 +103,7 @@ Legenda: <kbd> W</kbd> = Tecla Windows <br>
 
 <hr>
 
-### Dica
+### Dicas
 
 * [Como configurar a resolução e rotação das telas no BSPWM](https://plus.diolinux.com.br/t/como-configurar-a-resolucao-e-rotacao-das-telas-no-bspwm/37957)
 * [Como configurar bspwm e polybar para mais de um monitor](https://plus.diolinux.com.br/t/como-configurar-bspwm-e-polybar-para-mais-de-um-monitor/35201)
