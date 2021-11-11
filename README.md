@@ -34,7 +34,7 @@ Caso queira executar por conta própria ou modificar na intenção de moldar con
 
 ##
 
-#### Menu rofi
+#### Temas do menu rofi
  
 Podendo mudar a cor de acordo com o tema selecionado:
 
