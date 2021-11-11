@@ -77,7 +77,7 @@ Caso queira personalizar algum, acrescentar ou remover, pode ser realizado edita
 
 Seguem os atalho já configurados:
 
-Legenda: <kbd> W</kbd> = Tecla Windows
+Legenda: <kbd> W</kbd> = Tecla Windows <br>
 <kbd> W</kbd> - Menu de aplicativos <br>
 <kbd> Ctrl + W + t</kbd> - Seletor de tema <br>
 <kbd> W + w </kbd> - Mostra programas abertos (tecla Windows mais a tecla "w") <br>
