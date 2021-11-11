@@ -28,7 +28,7 @@ Caso queira executar por conta própria ou modificar na intenção de moldar con
 
 <hr>
 
-### Telas dos temas disponíveis
+### Temas e customizações disponíveis
 
 ![temas](https://user-images.githubusercontent.com/84329097/141335499-8e8b4683-a1d0-4727-9c66-58f3e452f491.gif)
 
