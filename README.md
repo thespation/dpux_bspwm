@@ -1,10 +1,17 @@
-### Sobre
+<p align="center">
+ <img width="800px" src="https://user-images.githubusercontent.com/84329097/142473810-c29cc5be-2fa6-451a-afcb-3bdb10fef653.PNG" align="center" alt="white" />
+
+
+</p>
+
+
+# Sobre
 
 Esse script possui a intenção de instalar o gerenciador de janelas [bspwm](https://github.com/baskerville/bspwm) em conjunto com [polybar](https://github.com/polybar/polybar) e [rofi](https://github.com/davatorium/rofi).
 
 <hr>
 
-### Instalação
+# Instalação
 
 Em seu terminal, rode o comando abaixo para começar a instalação:
 
@@ -13,7 +20,7 @@ sudo apt install git inxi -y && cd /tmp && git clone https://github.com/thespati
 ```
 <hr>
 
-### Sistemas suportados
+# Sistemas suportados
 Para que o script rode corretamente, é necessário ter o sistema, versão e DE abaixo:
 
 |   Sistema   | Versão | DE |
@@ -28,16 +35,16 @@ Caso queira executar por conta própria ou modificar na intenção de moldar con
 
 <hr>
 
-## Temas e customizações disponíveis
+# Temas e customizações disponíveis
 
-#### Temas para o BSPWM
-Utilize o atalho <kbd> Ctrl + alt + t</kbd> para seleiconar o tema desejado:<br>
+## Temas para o BSPWM
+Utilize o atalho <kbd>Ctrl</kbd> + <kbd>alt</kbd> + <kbd>t</kbd> para seleiconar o tema desejado:<br>
 
 ![temas](https://user-images.githubusercontent.com/84329097/141335499-8e8b4683-a1d0-4727-9c66-58f3e452f491.gif)
 
 ##
 
-#### Temas do menu rofi
+## Temas do menu rofi
  
 Podendo mudar a cor de acordo com o tema selecionado:
 
@@ -45,7 +52,7 @@ Podendo mudar a cor de acordo com o tema selecionado:
 
 <hr>
 
-### Troca de tema para LightDM
+## Troca de tema para LightDM
 
 Caso esse script seja rodado no Debian Xfce ou no Xubuntu, será modificado o tema do gestor de login, ficando:
 
@@ -55,13 +62,13 @@ Observação: o Xubuntu é configurado para usar o papel de parede da sessão no
 
 <hr>
 
-### Dependências
+# Dependências
 
 Para que seja realizada a instalação correta, é necessário ter instalado `inxi` em seu sistema, assim como o `git`. Caso a instalação seja realizada pelo comando apresentado acima, será instalado automaticamente.
 
 <hr>
 
-### O que será instalado
+# O que será instalado
 > Pacotes comuns a todas as distros:
 
 * bspwm, sxhkd, rofi, compton, polybar, dunst, [ksuperkey](https://github.com/hanschen/ksuperkey), neofetch, htop, feh, lxappearance, geany, dmenu, nm-tray, xfconf, xsettingsd, xfce4-power-manager, zenity, git.
@@ -76,7 +83,7 @@ Para que seja realizada a instalação correta, é necessário ter instalado `in
 
 <hr>
 
-### Teclas de atalhos</h2>
+# Teclas de atalhos</h2>
 Para utilização do *bspwm* vai notar que muitas das vezes o teclado é o nosso melhor amigo, para isso precisamos aprender alguns atalhos interessantes para nossa utilização.
 
 Caso queira personalizar algum, acrescentar ou remover, pode ser realizado editando o arquivo: `~/.config/sxhkd/sxhkdrc`.
@@ -84,32 +91,32 @@ Caso queira personalizar algum, acrescentar ou remover, pode ser realizado edita
 Seguem os atalho já configurados:
 
 Legenda: <kbd> W</kbd> = Tecla Windows <br>
-<kbd> W</kbd> - Menu de aplicativos <br>
-<kbd> Ctrl + W + t</kbd> - Seletor de tema <br>
-<kbd> W + w </kbd> - Mostra programas abertos (tecla Windows mais a tecla "w") <br>
-<kbd> W + 1-8</kbd> - Troca de área de trabalho <br>
-<kbd> W + Shift + 1-8</kbd> - Envia app em foco para a área de trabalho desejada <br>
-<kbd>W + Enter</kbd> - Terminal <br>
-<kbd>W + Barra de espaço</kbd> - troca entre modo tiling / floating <br>
-<kbd>W + F</kbd> - modo uma janela em tela cheia <br>
-<kbd>W + H/V/Q</kbd> - Prepara a divisão do app na Horizontal, Vertical ou Cancela <br>
-<kbd>W + TAB</kbd> - Volta para última área de trabalho aberta <br>
-<kbd>W + Shift + 1-8</kbd> - Envia a janela em foco para a área desejada <br>
-<kbd>W + Ctrol + ←/→/↑ /↓ </kbd> - Expande a janela em foco <br>
-<kbd>W + Alt + ←/→/↑ /↓</kbd> - Diminuir a janela em foco <br>
-<kbd>W + C</kbd> - Fecha janela em foco <br>
-<kbd>Ctrl + Alt +  ←/→</kbd> - Troca de área de trabalho <br>
-<kbd>W + x</kbd> - Menu com opções de desligamento <br>
+<kbd>W</kbd> - Menu de aplicativos <br>
+<kbd>Ctrl</kbd> + <kbd>W</kbd> + <kbd>t</kbd> - Seletor de tema <br>
+<kbd>W</kbd> + <kbd>w</kbd> - Mostra programas abertos (tecla Windows mais a tecla "w") <br>
+<kbd>W</kbd> + <kbd>1-8</kbd> - Troca de área de trabalho <br>
+<kbd>W</kbd> + <kbd>Shift</kbd> + <kbd>1-8</kbd> - Envia app em foco para a área de trabalho desejada <br>
+<kbd>W</kbd> + <kbd>Enter</kbd> - Terminal <br>
+<kbd>W</kbd> + <kbd>Barra de espaço</kbd> - troca entre modo tiling / floating <br>
+<kbd>W</kbd> + <kbd>F</kbd> - modo uma janela em tela cheia <br>
+<kbd>W</kbd> + <kbd>H/V/Q</kbd> - Prepara a divisão do app na Horizontal, Vertical ou Cancela <br>
+<kbd>W</kbd> + <kbd>TAB</kbd> - Volta para última área de trabalho aberta <br>
+<kbd>W</kbd> + <kbd>Shift</kbd> + <kbd>1-8</kbd> - Envia a janela em foco para a área desejada <br>
+<kbd>W</kbd> + <kbd>Ctrl</kbd> + <kbd>←/→/↑ /↓ </kbd> - Expande a janela em foco <br>
+<kbd>W</kbd> + <kbd>Alt</kbd> + <kbd>←/→/↑ /↓</kbd> - Diminuir a janela em foco <br>
+<kbd>W</kbd> + <kbd>C</kbd> - Fecha janela em foco <br>
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>←/→</kbd> - Troca de área de trabalho <br>
+<kbd>W</kbd> + <kbd>x</kbd> - Menu com opções de desligamento <br>
 
 <hr>
 
-### Dicas
+# Dicas
 
 * [Como configurar a resolução e rotação das telas no BSPWM](https://plus.diolinux.com.br/t/como-configurar-a-resolucao-e-rotacao-das-telas-no-bspwm/37957)
-* [Como configurar bspwm e polybar para mais de um monitor](https://plus.diolinux.com.br/t/como-configurar-bspwm-e-polybar-para-mais-de-um-monitor/35201)
+* [Como configurar BSPWM e polybar para mais de um monitor](https://plus.diolinux.com.br/t/como-configurar-bspwm-e-polybar-para-mais-de-um-monitor/35201)
 
 <hr>
 
-### Créditos
+# Créditos
 Tanto os menus, polybar, temas e configurações para bspwm quanto sxhkd foram elaborados pelo [Aditya Shakya](https://github.com/adi1090x) que disponibilizou em seu Github ([polybar](https://github.com/adi1090x/polybar-themes) e [rofi](https://github.com/adi1090x/rofi)).
 
