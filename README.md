@@ -82,15 +82,15 @@ Para que seja realizada a instalação correta, é necessário ter instalado `in
 # O que será instalado
 * Pacotes comuns a todas as distros:
 
-> bspwm, sxhkd, rofi, compton, polybar, dunst, [ksuperkey](https://github.com/hanschen/ksuperkey), neofetch, htop, feh, lxappearance, geany, dmenu, nm-tray, xfconf, xsettingsd, xfce4-power-manager, zenity, git.
+   > bspwm, sxhkd, rofi, compton, polybar, dunst, [ksuperkey](https://github.com/hanschen/ksuperkey), neofetch, htop, feh, lxappearance, geany, dmenu, nm-tray, xfconf, xsettingsd, xfce4-power-manager, zenity, git.
 
 * Pacotes destinados as distros xfce:
 
-> thunar-archive-plugin, catfish, baobab, meld, language-selector-gnome* (somente para o Xubuntu).
+   > thunar-archive-plugin, catfish, baobab, meld, language-selector-gnome* (somente para o Xubuntu).
 
 * Pacotes destinados as distros GNOME:
 
-> mate-polkit, i3lock.
+   > mate-polkit, i3lock.
 
 <hr>
 
@@ -100,24 +100,38 @@ Para utilização do *bspwm* vai notar que muitas das vezes o teclado é o nosso
 Caso queira personalizar algum, acrescentar ou remover, pode ser realizado editando o arquivo: `~/.config/sxhkd/sxhkdrc`.
 
 Seguem os atalho já configurados:
+<br>(Legenda: <kbd> W</kbd> = Tecla Windows)
 
-Legenda: <kbd> W</kbd> = Tecla Windows <br>
-<kbd>W</kbd> - Menu de aplicativos <br>
-<kbd>Ctrl</kbd> + <kbd>W</kbd> + <kbd>t</kbd> - Seletor de tema <br>
+## Menus
+<kbd>W</kbd> ou <kbd>alt</kbd> + <kbd>F1</kbd> - Menu de aplicativos <br>
 <kbd>W</kbd> + <kbd>w</kbd> - Mostra programas abertos (tecla Windows mais a tecla "w") <br>
-<kbd>W</kbd> + <kbd>1-8</kbd> - Troca de área de trabalho <br>
-<kbd>W</kbd> + <kbd>Shift</kbd> + <kbd>1-8</kbd> - Envia app em foco para a área de trabalho desejada <br>
+<kbd>W</kbd> + <kbd>x</kbd> - Menu com opções de desligamento <br>
+<kbd>W</kbd> + <kbd>d</kbd> - dmenu (menu alternativo ao Rofi) <br>
+<kbd>Ctrl</kbd> + <kbd>alt</kbd> + <kbd>t</kbd> - Seletor de tema <br>
+
+## Comandos internos
+<kbd>W</kbd> + <kbd>esc</kbd> - Recarregar atalhos (arquivos sxhkd)<br>
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>r</kbd>- Recarregar BSPWM<br>
+
+## Aplicativos
 <kbd>W</kbd> + <kbd>Enter</kbd> - Terminal <br>
+<kbd>W</kbd> + <kbd>Shift</kbd> + <kbd>t</kbd> - Gestor de arquivos (thunar ou nautilus)<br>
+<kbd>W</kbd> + <kbd>Shift</kbd> + <kbd>w</kbd> - Firefox<br>
+<kbd>W</kbd> + <kbd>Shift</kbd> + <kbd>e</kbd> - Geany<br>
+<kbd>W</kbd> + <kbd>c</kbd> - Fechar janela em foco <br>
+
+## Áreas de trabalho
+<kbd>W</kbd> + <kbd>1-8</kbd> - Troca de área de trabalho <br>
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>←/→</kbd> - Troca de área de trabalho para a ao lado<br>
+
+## Gerenciar Janelas
+<kbd>W</kbd> + <kbd>Shift</kbd> + <kbd>1-8</kbd> - Envia app em foco para a área de trabalho desejada <br>
 <kbd>W</kbd> + <kbd>Barra de espaço</kbd> - troca entre modo tiling / floating <br>
 <kbd>W</kbd> + <kbd>F</kbd> - modo uma janela em tela cheia <br>
 <kbd>W</kbd> + <kbd>H/V/Q</kbd> - Prepara a divisão do app na Horizontal, Vertical ou Cancela <br>
-<kbd>W</kbd> + <kbd>TAB</kbd> - Volta para última área de trabalho aberta <br>
-<kbd>W</kbd> + <kbd>Shift</kbd> + <kbd>1-8</kbd> - Envia a janela em foco para a área desejada <br>
+<kbd>W</kbd> + <kbd>TAB</kbd> - Volta para último app aberto <br>
 <kbd>W</kbd> + <kbd>Ctrl</kbd> + <kbd>←/→/↑ /↓ </kbd> - Expande a janela em foco <br>
 <kbd>W</kbd> + <kbd>Alt</kbd> + <kbd>←/→/↑ /↓</kbd> - Diminuir a janela em foco <br>
-<kbd>W</kbd> + <kbd>C</kbd> - Fecha janela em foco <br>
-<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>←/→</kbd> - Troca de área de trabalho <br>
-<kbd>W</kbd> + <kbd>x</kbd> - Menu com opções de desligamento <br>
 
 <hr>
 
