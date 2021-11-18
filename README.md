@@ -1,6 +1,9 @@
 <p align="center">
 <img width="800px" src="https://user-images.githubusercontent.com/84329097/142484787-00ed1394-3601-44d5-b1e4-446fd35fd37b.png" align="center" alt="white" /><br><br>
+
+[//]: <> (site para ícones: https://shields.io/ )
  
+<img alt="Maintained" src="https://img.shields.io/badge/Maintained%3F-Yes-green"> 
 <img alt="Bitbucket open issues" src="https://img.shields.io/bitbucket/issues/thespation/dpux_bspwm">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/thespation/dpux_bspwm">
 <img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/y/thespation/dpux_bspwm">
