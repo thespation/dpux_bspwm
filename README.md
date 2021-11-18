@@ -1,5 +1,5 @@
 <p align="center">
- <img width="800px" src="https://user-images.githubusercontent.com/84329097/142473810-c29cc5be-2fa6-451a-afcb-3bdb10fef653.PNG" align="center" alt="white" /><br><br>
+<img width="800px" src="https://user-images.githubusercontent.com/84329097/142484787-00ed1394-3601-44d5-b1e4-446fd35fd37b.png" align="center" alt="white" /><br><br>
  
 <img alt="Bitbucket open issues" src="https://img.shields.io/bitbucket/issues/thespation/dpux_bspwm">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/thespation/dpux_bspwm">
