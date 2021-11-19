@@ -40,14 +40,33 @@ sudo apt install git inxi -y && cd /tmp && git clone https://github.com/thespati
 # Sistemas suportados
 Para que o script rode corretamente, é necessário ter o sistema, versão e DE abaixo:
 
-|   Sistema   | Versão | DE |
-| :-----------: | :-----------: | :-----------: |
-|    Debian   | Bullseye ou Bookworm | Xfce ou GNOME |
-|   Pop!_OS   |        21.04         | - |
-|   Ubuntu    |        21.10         | GNOME |
-|   Xubuntu   |        21.10         | Xfce |
-
- 
+<table align=center border="1">
+    <tr>
+        <th>Sistema</td>
+        <th>Versão</td>
+        <th>DE</td>
+    </tr>
+    <tr>
+        <td align="center"valign="center">Debian</td>
+        <td align="center"valign="center">Bullseye ou Bookworm</td>
+        <td align="center"valign="center">Xfce ou GNOME</td>
+    </tr>
+    <tr>
+        <td>Pop!_OS</td>
+        <td align="center"valign="center">21.04</td>
+        <td align="center"valign="center">-</td>
+       </tr>
+     <tr>
+        <td align="center"valign="center">Ubuntu</td>
+        <td rowspan="2" align="center"valign="center">21.10</td>
+        <td align="center"valign="center">GNOME</td>
+    </tr>
+     <tr>
+        <td align="center"valign="center">Xubuntu</td>
+        <td align="center"valign="center">Xfce</td>
+    </tr>
+</table>
+  
 Caso queira executar por conta própria ou modificar na intenção de moldar conforme necessário para seu sistema, fique à vontade, porém não tem como me responsabilizar por isso.
 
 <hr>
