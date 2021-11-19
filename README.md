@@ -3,19 +3,22 @@
 
 [//]: <> (site para ícones: https://shields.io/ )
  
-<img alt="Maintained" src="https://img.shields.io/badge/Maintained%3F-Yes-green"> 
-<img alt="Bitbucket open issues" src="https://img.shields.io/bitbucket/issues/thespation/dpux_bspwm">
-<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/thespation/dpux_bspwm">
-<img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/y/thespation/dpux_bspwm">
+<img alt="Maintained" src="https://img.shields.io/badge/Maintained%3F-Yes-green">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/thespation/dpux_bspwm">
- 
- <br>
- <img alt="GitHub followers" src="https://img.shields.io/github/followers/thespation?style=social">
- <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/thespation/dpux_bspwm?style=social">
- <img alt="GitHub forks" src="https://img.shields.io/github/forks/thespation/dpux_bspwm?style=social">
- <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/thespation/dpux_bspwm?style=social">
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/thespation/dpux_bspwm">
+<img alt="Bitbucket open issues" src="https://img.shields.io/bitbucket/issues/thespation/dpux_bspwm">
+<img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/y/thespation/dpux_bspwm">
+<a href="#"><img src="https://badges.pufler.dev/visits/thespation/thespation">
 
- 
+ <p align="center">
+ <a href="https://github.com/thespation/dpux_bspwm#sobre" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/-Sobre-blue"></a>
+ <a href="https://github.com/thespation/dpux_bspwm#instalação" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/-Instalação-blue"></a>
+ <a href="https://github.com/thespation/dpux_bspwm#temas-e-customizações-disponíveis" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/-Temas e customizações disponíveis-blue"></a>
+<a href="https://github.com/thespation/dpux_bspwm#dependências" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/-Dependências-blue"></a>
+ <a href="https://github.com/thespation/dpux_bspwm#o-que-será-instalado" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/-O que será instalado-blue"></a>
+ <a href="https://github.com/thespation/dpux_bspwm#teclas-de-atalhos" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/-Teclas de atalhos-blue"></a>
+  <a href="https://github.com/thespation/dpux_bspwm#dicas" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/-Dicas-blue"></a>
+ <a href="https://github.com/thespation/dpux_bspwm#créditos" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/-Créditos-blue"></a>
 </p>
 
 
