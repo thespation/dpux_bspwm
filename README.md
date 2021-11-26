@@ -1,5 +1,5 @@
 <p align="center">
-<img width="800px" src="https://user-images.githubusercontent.com/84329097/142484787-00ed1394-3601-44d5-b1e4-446fd35fd37b.png" align="center" alt="white" /><br><br>
+<img width="800px" src="https://user-images.githubusercontent.com/84329097/143605230-969459f7-5df1-4a38-a594-ee4d5f698a2c.png" align="center" alt="white" /><br><br>
 
 [//]: <> (site para ícones: https://shields.io/ )
  
@@ -30,11 +30,18 @@ Esse script possui a intenção de instalar o gerenciador de janelas [bspwm](htt
 
 # Instalação
 
+## Base Debian (Debian, Pop!_OS, Ubuntu e Xubuntu)
 Em seu terminal, rode o comando abaixo para começar a instalação:
-
 ```bash
 sudo apt install git inxi -y && cd /tmp && git clone https://github.com/thespation/dpux_bspwm && chmod 755 dpux_bspwm/* -R && cd dpux_bspwm/ && ./instalar.sh
 ```
+ 
+## Fedora
+Em seu terminal, rode o comando abaixo para começar a instalação:
+```bash
+sudo dnf install -y git inxi && cd /tmp && git clone https://github.com/thespation/dpux_bspwm && chmod 755 dpux_bspwm/* -R && cd dpux_bspwm/ && ./instalar.sh
+```
+
 <hr>
 
 # Sistemas suportados
@@ -52,6 +59,11 @@ Para que o script rode corretamente, é necessário ter o sistema, versão e DE 
         <td align="center"valign="center">Xfce ou GNOME</td>
     </tr>
     <tr>
+        <td align="center"valign="center">Fedora</td>
+        <td align="center"valign="center">35*</td>
+        <td align="center"valign="center">GNOME</td>
+    </tr>
+    <tr>
         <td>Pop!_OS</td>
         <td align="center"valign="center">21.04</td>
         <td align="center"valign="center">-</td>
@@ -67,8 +79,8 @@ Para que o script rode corretamente, é necessário ter o sistema, versão e DE 
     </tr>
 </table>
   
-Caso queira executar por conta própria ou modificar na intenção de moldar conforme necessário para seu sistema, fique à vontade, porém não tem como me responsabilizar por isso.
-
+Caso queira executar por conta própria ou modificar na intenção de moldar conforme necessário para seu sistema, fique à vontade, porém não tem como me responsabilizar por isso.<br><br>
+*Foi realizado o teste no Fedora v35, porém deve funcionar normalmente na v34.
 <hr>
 
 # Temas e customizações disponíveis
