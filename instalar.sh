@@ -312,6 +312,7 @@ function PERSONA_DEBIAN()
 				cp -rf /tmp/dpux_bspwm/home/debian/.fehbg $HOME
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/Thunar/ ~/.config
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/sxhkd/ ~/.config
+				mkdir ~/.config/neofetch
 				cp -rf /tmp/dpux_bspwm/home/debian/config.conf ~/.config/neofetch
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/powermenu ~/.config/bspwm/rofi/bin
 				sudo cp -rf /tmp/dpux_bspwm/home/debian/nordico.png /usr/share/images/desktop-base/
