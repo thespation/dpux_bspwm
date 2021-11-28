@@ -1,6 +1,6 @@
 <p align="center">
-<img width="800px" src="https://user-images.githubusercontent.com/84329097/143605230-969459f7-5df1-4a38-a594-ee4d5f698a2c.png" align="center" alt="white" /><br><br>
-
+<img width="800px" src="https://user-images.githubusercontent.com/84329097/143779279-c96cc289-a9aa-4a37-bd7b-1edd30d8fd83.png" align="center" alt="white" /><br><br>
+ 
 [//]: <> (site para ícones: https://shields.io/ )
  
 <img alt="Maintained" src="https://img.shields.io/badge/Maintained%3F-Yes-green">
