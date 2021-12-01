@@ -248,7 +248,7 @@ type = internal/date
 interval = 1.0
 
 time = %H:%M
-time-alt = %A, %d %B %Y
+time-alt = %A, %d de %B %Y
 
 format = <label>
 format-prefix = " "
