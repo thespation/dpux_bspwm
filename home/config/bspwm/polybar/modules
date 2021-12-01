@@ -26,7 +26,7 @@ format-muted-prefix-font = 2
 format-muted-prefix-foreground = ${color.RED}
 
 label-volume = %percentage%%
-label-muted = " Mute"
+label-muted = " Mudo"
 label-muted-foreground = #757575
 
 ramp-volume-0 = 奄
