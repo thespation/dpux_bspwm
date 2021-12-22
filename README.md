@@ -65,12 +65,11 @@ Para que o script rode corretamente, é necessário ter o sistema, versão e DE 
     </tr>
     <tr>
         <td>Pop!_OS</td>
-        <td align="center"valign="center">21.10</td>
+        <td rowspan="3" align="center"valign="center">21.10</td>
         <td align="center"valign="center">-</td>
        </tr>
      <tr>
         <td align="center"valign="center">Ubuntu</td>
-        <td rowspan="2" align="center"valign="center">21.10</td>
         <td align="center"valign="center">GNOME</td>
     </tr>
      <tr>
