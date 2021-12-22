@@ -20,7 +20,7 @@ function VERIF_DISTRIB()
 			APPS_XFCE
 			PERSONA_XUBUNTU
 		
-		elif [[ $ID = "Distributor ID:	Pop" && $RELEASE = "Release:	21.04" ]]; then
+		elif [[ $ID = "Distributor ID:	Pop" && $RELEASE = "Release:	21.10" ]]; then
 			inxi -S
 			sleep 2s
 			echo "#--------------------Sistema suportado, instalação seguirá--------------------#"
