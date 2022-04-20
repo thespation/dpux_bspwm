@@ -60,7 +60,7 @@ function VERIF_DISTRIB()
 			APPS_POP
 			PERSONA_DGNOME
 			
-		elif [[ $INXI = *GNOME* && $INXI = *fedora* ]]; then
+		elif [[ $INXI = *GNOME* && $INXI = *Fedora* ]]; then
 			clear
 			inxi -S
 			sleep 2s
