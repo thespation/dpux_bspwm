@@ -40,8 +40,8 @@ function VERIF_DISTRIB()
 			KSUPERKEY
 			PERSONA_DEBIAN
 						
-		elif [[ $INXI = *GNOME* && $INXI = *Ubuntu 22.04* ]]; then
-			inxi -S
+		elif [[ $INXI = *GNOME* && $INXI = *22.04* && $INXI = *Ubuntu* ]]; then
+		     	inxi -S
 			sleep 2s
 			echo "#--------------------Sistema suportado, instalação seguirá--------------------#"
 			echo ""
