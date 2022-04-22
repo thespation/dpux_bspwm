@@ -10,7 +10,7 @@ function VERIF_DISTRIB()
 {	INXI=`inxi -S`
 	ID=`lsb_release -i`
 	RELEASE=`lsb_release -r`
-	if [[ $INXI = *Xfce* && $INXI = *21.10* && $INXI = *Ubuntu* ]]; then
+	if [[ $INXI = *Xfce* && $INXI = *22.04* && $INXI = *Ubuntu* ]]; then
 			inxi -S
 			sleep 2s
 			echo "#--------------------Sistema suportado, instalação seguirá--------------------#"
@@ -40,7 +40,7 @@ function VERIF_DISTRIB()
 			KSUPERKEY
 			PERSONA_DEBIAN
 						
-		elif [[ $INXI = *GNOME* && $INXI = *21.10* && $INXI = *Ubuntu* ]]; then
+		elif [[ $INXI = *GNOME* && $INXI = *Ubuntu 22.04* ]]; then
 			inxi -S
 			sleep 2s
 			echo "#--------------------Sistema suportado, instalação seguirá--------------------#"
