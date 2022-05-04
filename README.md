@@ -1,7 +1,7 @@
 <p align="center">
 <img width="800px" src="https://user-images.githubusercontent.com/84329097/143779279-c96cc289-a9aa-4a37-bd7b-1edd30d8fd83.png" align="center" alt="white" /><br><br>
  
-[//]: <> (site para ícones: https://shields.io/ )
+<!-- (site para ícones: https://shields.io/ ) -->
  
 <img alt="Maintained" src="https://img.shields.io/badge/Maintained%3F-Yes-green">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/thespation/dpux_bspwm">
