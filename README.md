@@ -78,7 +78,7 @@ Para que o script rode corretamente, é necessário ter o sistema, versão e DE 
 </table>
   
 Caso queira executar por conta própria ou modificar na intenção de moldar conforme necessário para seu sistema, fique à vontade, porém não tem como me responsabilizar por isso.<br><br>
-*Foi realizado o teste no Fedora v35, porém deve funcionar normalmente na v34.
+*Foi realizado o teste no Fedora v35, porém deve funcionar normalmente na v34, v36 e v37.
 <hr>
 
 # Temas e customizações disponíveis
