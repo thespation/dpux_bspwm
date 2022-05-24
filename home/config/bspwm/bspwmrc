@@ -57,19 +57,19 @@ bspc rule -r *:*
 # 1 > terminal
 bspc rule -a Alacritty desktop='^1' follow=on focus=on
 bspc rule -a Xfce4-terminal desktop='^1' follow=on focus=on
-bspc rule -a gnome-terminal desktop='^1' follow=on focus=on
+bspc rule -a Gnome-terminal desktop='^1' follow=on focus=on
 
 # 2 > web
 bspc rule -a firefox desktop='^2' follow=on focus=on
 bspc rule -a chromium desktop='^2' follow=on focus=on
 
 # 3 > files
-declare -a files=(Pcmanfm Thunar Nautilus qBittorrent)
+declare -a files=(Pcmanfm Thunar qBittorrent Org.gnome.Nautilus)
 for i in ${files[@]}; do
    bspc rule -a $i desktop='^3' follow=on focus=on; done
 
 # 4 > code
-declare -a code=(Geany code-oss)
+declare -a code=(Geany code-oss Gedit)
 for i in ${code[@]}; do
    bspc rule -a $i desktop='^4' follow=on focus=on; done
 
