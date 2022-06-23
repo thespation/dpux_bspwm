@@ -33,6 +33,10 @@ ctrl + alt + t
 super + {w,x,}
 	sh ~/.config/bspwm/rofi/bin/{windows,powermenu}
 
+# Rofi Network Menu
+super + n
+	nmd
+
 ##---------- Applications ----------##
 
 # Launch Apps
