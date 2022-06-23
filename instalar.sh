@@ -220,7 +220,6 @@ function PERSONA()
 				cp -rf /tmp/dpux_bspwm/home/.Xresources $HOME
 				cp -rf /tmp/dpux_bspwm/home/.gtkrc-2.0 $HOME
 				cp -rf /tmp/dpux_bspwm/home/.xsettingsd $HOME
-				cp -rf /tmp/dpux_bspwm/home/xubuntu/powermenu.sh ~/.config/bspwm/rofi/bin
 				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/apps_as_root.sh /usr/local/bin
 				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/nmd /usr/local/bin
 				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/askpass_rofi.sh /usr/local/bin
