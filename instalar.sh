@@ -268,6 +268,7 @@ function PERSONA_POP()
 			echo "#--------------------Copiar personalizações para o PopOs---------------------#"
 				cp -rf /tmp/dpux_bspwm/home/pop/.fehbg $HOME
 				cp -rf /tmp/dpux_bspwm/home/pop/powermenu ~/.config/bspwm/rofi/bin
+				cp -rf /tmp/dpux_bspwm/home/pop/powermenu.sh ~/.config/bspwm/rofi/bin
 				cp -rf /tmp/dpux_bspwm/home/pop/sxhkd/ ~/.config
 				mkdir ~/.config/neofetch
 				cp -rf /tmp/dpux_bspwm/home/pop/config.conf ~/.config/neofetch
@@ -290,6 +291,7 @@ function PERSONA_XUBUNTU()
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/Thunar/ ~/.config
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/sxhkd/ ~/.config
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/powermenu ~/.config/bspwm/rofi/bin
+				cp -rf /tmp/dpux_bspwm/home/xubuntu/powermenu.sh ~/.config/bspwm/rofi/bin
 				mkdir ~/.config/neofetch
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/config.conf ~/.config/neofetch
 				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/nordico.png /usr/share/xfce4/backdrops/
@@ -316,6 +318,7 @@ function PERSONA_DEBIAN()
 				mkdir ~/.config/neofetch
 				cp -rf /tmp/dpux_bspwm/home/debian/config.conf ~/.config/neofetch
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/powermenu ~/.config/bspwm/rofi/bin
+				cp -rf /tmp/dpux_bspwm/home/xubuntu/powermenu.sh ~/.config/bspwm/rofi/bin
 				sudo cp -rf /tmp/dpux_bspwm/home/debian/nordico.png /usr/share/images/desktop-base/
 				sudo cp -rf /tmp/dpux_bspwm/home/debian/lightdm-gtk-greeter.conf /etc/lightdm/
 				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/apps_as_root.sh /usr/local/bin
@@ -335,6 +338,7 @@ function PERSONA_UBUNTU()
 			echo "#---------------------Copiar personalizações para Ubuntu---------------------#"
 				cp -rf /tmp/dpux_bspwm/home/ubuntu/.fehbg $HOME
 				cp -rf /tmp/dpux_bspwm/home/pop/powermenu ~/.config/bspwm/rofi/bin
+				cp -rf /tmp/dpux_bspwm/home/pop/powermenu.sh ~/.config/bspwm/rofi/bin
 				cp -rf /tmp/dpux_bspwm/home/pop/sxhkd/ ~/.config
 				mkdir ~/.config/neofetch
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/config.conf ~/.config/neofetch
@@ -354,6 +358,7 @@ function PERSONA_DGNOME()
 			echo "#------------------Copiar personalizações para Debian Gnome------------------#"
 				cp -rf /tmp/dpux_bspwm/home/debian/.fehbg $HOME
 				cp -rf /tmp/dpux_bspwm/home/pop/powermenu ~/.config/bspwm/rofi/bin
+				cp -rf /tmp/dpux_bspwm/home/pop/powermenu.sh ~/.config/bspwm/rofi/bin
 				cp -rf /tmp/dpux_bspwm/home/pop/sxhkd/ ~/.config
 				mkdir ~/.config/neofetch
 				cp -rf /tmp/dpux_bspwm/home/debian/config.conf ~/.config/neofetch
