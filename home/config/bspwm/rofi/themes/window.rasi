@@ -54,7 +54,7 @@ entry {
     border-radius:                  0px;
     border-color:                  	@selected;
     placeholder-color:              @foreground;
-    placeholder:                    "Find...";
+    placeholder:                    "Pesquisar...";
     expand:                         true;
     horizontal-align:               0;
     blink:                          true;
