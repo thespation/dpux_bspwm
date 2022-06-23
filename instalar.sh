@@ -220,6 +220,11 @@ function PERSONA()
 				cp -rf /tmp/dpux_bspwm/home/.Xresources $HOME
 				cp -rf /tmp/dpux_bspwm/home/.gtkrc-2.0 $HOME
 				cp -rf /tmp/dpux_bspwm/home/.xsettingsd $HOME
+				cp -rf /tmp/dpux_bspwm/home/xubuntu/powermenu.sh ~/.config/bspwm/rofi/bin
+				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/apps_as_root.sh /usr/local/bin
+				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/nmd /usr/local/bin
+				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/askpass_rofi.sh /usr/local/bin
+				
 		
 				# Copiar temas
 				cd /tmp && git clone https://github.com/archcraft-os/archcraft-themes && chmod 755 archcraft-themes/* -R
@@ -295,10 +300,7 @@ function PERSONA_XUBUNTU()
 				mkdir ~/.config/neofetch
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/config.conf ~/.config/neofetch
 				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/nordico.png /usr/share/xfce4/backdrops/
-				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/lightdm-gtk-greeter.conf /etc/lightdm/
-				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/apps_as_root.sh /usr/local/bin
-				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/nmd /usr/local/bin
-				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/askpass_rofi.sh /usr/local/bin &&
+				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/lightdm-gtk-greeter.conf /etc/lightdm/ &&
 			clear &&
 			echo "#-------------------Personalizações para Xubuntu copiadas--------------------#"
 				sleep 3s
@@ -320,9 +322,7 @@ function PERSONA_DEBIAN()
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/powermenu ~/.config/bspwm/rofi/bin
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/powermenu.sh ~/.config/bspwm/rofi/bin
 				sudo cp -rf /tmp/dpux_bspwm/home/debian/nordico.png /usr/share/images/desktop-base/
-				sudo cp -rf /tmp/dpux_bspwm/home/debian/lightdm-gtk-greeter.conf /etc/lightdm/
-				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/apps_as_root.sh /usr/local/bin
-				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/askpass_rofi.sh /usr/local/bin &&
+				sudo cp -rf /tmp/dpux_bspwm/home/debian/lightdm-gtk-greeter.conf /etc/lightdm/ &&
 			clear &&
 			echo "#--------------------Personalizações para Debian copiadas--------------------#"
 				sleep 3s
@@ -342,10 +342,7 @@ function PERSONA_UBUNTU()
 				cp -rf /tmp/dpux_bspwm/home/pop/sxhkd/ ~/.config
 				mkdir ~/.config/neofetch
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/config.conf ~/.config/neofetch
-				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/nordico.png /usr/share/backgrounds/
-				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/apps_as_root.sh /usr/local/bin
-				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/nmd /usr/local/bin
-				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/askpass_rofi.sh /usr/local/bin &&
+				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/nordico.png /usr/share/backgrounds/ &&
 			clear &&
 			echo "#--------------------Personalizações para Ubuntu copiadas--------------------#"
 				sleep 3s
@@ -365,10 +362,7 @@ function PERSONA_DGNOME()
 				cp -rf /tmp/dpux_bspwm/home/pop/sxhkd/ ~/.config
 				mkdir ~/.config/neofetch
 				cp -rf /tmp/dpux_bspwm/home/debian/config.conf ~/.config/neofetch
-				sudo cp -rf /tmp/dpux_bspwm/home/debian/nordico.png /usr/share/images/desktop-base/
-				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/apps_as_root.sh /usr/local/bin
-				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/nmd /usr/local/bin
-				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/askpass_rofi.sh /usr/local/bin &&
+				sudo cp -rf /tmp/dpux_bspwm/home/debian/nordico.png /usr/share/images/desktop-base/ &&
 			clear &&
 			echo "#-----------------Personalizações para Debian Gnome copiadas-----------------#"
 				sleep 3s
@@ -388,10 +382,7 @@ function PERSONA_FEDORA()
 				cp -rf /tmp/dpux_bspwm/home/pop/sxhkd/ ~/.config
 				mkdir ~/.config/neofetch
 				cp -rf /tmp/dpux_bspwm/home/fedora/config.conf ~/.config/neofetch
-				sudo cp -rf /tmp/dpux_bspwm/home/fedora/nordico.png /usr/share/backgrounds
-				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/apps_as_root.sh /usr/local/bin
-				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/nmd /usr/local/bin
-				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/askpass_rofi.sh /usr/local/bin &&
+				sudo cp -rf /tmp/dpux_bspwm/home/fedora/nordico.png /usr/share/backgrounds &&
 			clear &&
 			echo "#--------------------Personalizações para Fedora copiadas--------------------#"
 				sleep 3s
