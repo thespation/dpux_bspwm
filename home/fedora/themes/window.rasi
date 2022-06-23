@@ -54,7 +54,7 @@ entry {
     border-radius:                  0px;
     border-color:                  	@selected;
     placeholder-color:              @foreground;
-    placeholder:                    "Localizar...";
+    placeholder:                    " Localizar...";
     expand:                         true;
     horizontal-align:               0;
     blink:                          true;
