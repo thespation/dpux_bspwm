@@ -142,6 +142,7 @@ Seguem os atalho já configurados:
 <kbd>W</kbd> + <kbd>w</kbd> - Mostra programas abertos (tecla Windows mais a tecla "w") <br>
 <kbd>W</kbd> + <kbd>x</kbd> - Menu com opções de desligamento <br>
 <kbd>W</kbd> + <kbd>d</kbd> - dmenu (menu alternativo ao Rofi) <br>
+<kbd>W</kbd> + <kbd>N</kbd> - Menu para gerenciar conexões <br>
 <kbd>Ctrl</kbd> + <kbd>alt</kbd> + <kbd>t</kbd> - Seletor de tema <br>
 
 ## Comandos internos
