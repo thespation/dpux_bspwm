@@ -4,7 +4,7 @@
 configuration {
     font:                           "Iosevka 10";
     show-icons:                     false;
-    display-window: 				"Windows :";
+    display-window: 				"Apps :";
     window-format: 					"{w}  ·  {c}  ·  {t}";
     disable-history:                false;
 	click-to-exit: 					true;
