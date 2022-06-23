@@ -342,7 +342,10 @@ function PERSONA_UBUNTU()
 				cp -rf /tmp/dpux_bspwm/home/pop/sxhkd/ ~/.config
 				mkdir ~/.config/neofetch
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/config.conf ~/.config/neofetch
-				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/nordico.png /usr/share/backgrounds/ &&
+				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/nordico.png /usr/share/backgrounds/
+				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/apps_as_root.sh /usr/local/bin
+				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/nmd /usr/local/bin
+				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/askpass_rofi.sh /usr/local/bin &&
 			clear &&
 			echo "#--------------------Personalizações para Ubuntu copiadas--------------------#"
 				sleep 3s
@@ -363,6 +366,9 @@ function PERSONA_DGNOME()
 				mkdir ~/.config/neofetch
 				cp -rf /tmp/dpux_bspwm/home/debian/config.conf ~/.config/neofetch
 				sudo cp -rf /tmp/dpux_bspwm/home/debian/nordico.png /usr/share/images/desktop-base/
+				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/apps_as_root.sh /usr/local/bin
+				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/nmd /usr/local/bin
+				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/askpass_rofi.sh /usr/local/bin &&
 			clear &&
 			echo "#-----------------Personalizações para Debian Gnome copiadas-----------------#"
 				sleep 3s
@@ -383,6 +389,9 @@ function PERSONA_FEDORA()
 				mkdir ~/.config/neofetch
 				cp -rf /tmp/dpux_bspwm/home/fedora/config.conf ~/.config/neofetch
 				sudo cp -rf /tmp/dpux_bspwm/home/fedora/nordico.png /usr/share/backgrounds
+				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/apps_as_root.sh /usr/local/bin
+				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/nmd /usr/local/bin
+				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/askpass_rofi.sh /usr/local/bin &&
 			clear &&
 			echo "#--------------------Personalizações para Fedora copiadas--------------------#"
 				sleep 3s
