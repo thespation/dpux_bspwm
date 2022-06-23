@@ -295,6 +295,7 @@ function PERSONA_XUBUNTU()
 				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/nordico.png /usr/share/xfce4/backdrops/
 				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/lightdm-gtk-greeter.conf /etc/lightdm/
 				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/apps_as_root.sh /usr/local/bin
+				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/nmd /usr/local/bin
 				sudo cp -rf /tmp/dpux_bspwm/home/xubuntu/askpass_rofi.sh /usr/local/bin &&
 			clear &&
 			echo "#-------------------Personalizações para Xubuntu copiadas--------------------#"
