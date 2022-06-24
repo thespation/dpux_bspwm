@@ -64,7 +64,7 @@ bspc rule -a chromium desktop='^2' follow=on focus=on
 bspc rule -a Google-chrome desktop='^2' follow=on focus=on
 
 # 3 > files
-declare -a files=(Pcmanfm Thunar qBittorrent Org.gnome.Nautilus)
+declare -a files=(Pcmanfm Thunar qBittorrent Org.gnome.Nautilus Baobab Gnome-disks)
 for i in ${files[@]}; do
    bspc rule -a $i desktop='^3' follow=on focus=on; done
 
@@ -79,6 +79,9 @@ libreoffice-writer libreoffice-calc libreoffice-impress \
 libreoffice-startcenter libreoffice Soffice *:libreofficedev *:soffice)
 for i in ${office[@]}; do
    bspc rule -a $i desktop='^5' follow=on focus=on; done
+bspc rule -a Gnome-calendar desktop='^8' follow=on focus=on
+bspc rule -a Gnome-contacts desktop='^8' follow=on focus=on
+bspc rule -a Org.gnome-Weather desktop='^8' follow=on focus=on
 
 # 6 > Communication
 declare -a comm=(Thunderbird TelegramDesktop Hexchat)
@@ -86,9 +89,9 @@ for i in ${comm[@]}; do
    bspc rule -a $i desktop='^6' follow=on focus=on; done
 
 # 7 > media
-declare -a media=(Audacity Music MPlayer Lxmusic Inkscape Gimp-2.10 obs)
+declare -a media=(Audacity Music MPlayer Lxmusic Inkscape Gimp-2.10 obs Totem Eog)
 for i in ${media[@]}; do
-   bspc rule -a $i desktop='^7' state=floating follow=on focus=on; done
+   bspc rule -a $i desktop='^7' follow=on focus=on; done
 
 # 8 > settings
 bspc rule -a 'VirtualBox Manager' desktop='^8' follow=on focus=on
