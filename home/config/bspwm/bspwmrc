@@ -79,10 +79,10 @@ libreoffice-writer libreoffice-calc libreoffice-impress \
 libreoffice-startcenter libreoffice Soffice *:libreofficedev *:soffice)
 for i in ${office[@]}; do
    bspc rule -a $i desktop='^5' follow=on focus=on; done
-bspc rule -a Gnome-calendar desktop='^8' follow=on focus=on
-bspc rule -a Gnome-contacts desktop='^8' follow=on focus=on
-bspc rule -a Org.gnome-Weather desktop='^8' follow=on focus=on
-bspc rule -a Xfce4-dict desktop='^8' follow=on focus=on
+bspc rule -a Gnome-calendar desktop='^5' follow=on focus=on
+bspc rule -a Gnome-contacts desktop='^5' follow=on focus=on
+bspc rule -a Org.gnome-Weather desktop='^5' follow=on focus=on
+bspc rule -a Xfce4-dict desktop='^5' follow=on focus=on
 
 # 6 > Communication
 declare -a comm=(Thunderbird TelegramDesktop Hexchat)
