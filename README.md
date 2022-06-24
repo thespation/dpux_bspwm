@@ -85,8 +85,10 @@ Caso queira executar por conta própria ou modificar na intenção de moldar con
 
 ## Temas para o BSPWM
 Utilize o atalho <kbd>Ctrl</kbd> + <kbd>alt</kbd> + <kbd>t</kbd> para selecionar o tema desejado:<br>
+<!-- (Site para crair gif: https://ezgif.com/maker) -->
 
-![temas](https://user-images.githubusercontent.com/84329097/141335499-8e8b4683-a1d0-4727-9c66-58f3e452f491.gif)
+![temas](https://user-images.githubusercontent.com/84329097/175645568-0d0022b3-3e61-4478-af97-0a50c48e26c7.gif)
+
 
 ##
 
@@ -94,7 +96,7 @@ Utilize o atalho <kbd>Ctrl</kbd> + <kbd>alt</kbd> + <kbd>t</kbd> para selecionar
  
 Podendo mudar a cor de acordo com o tema selecionado:
 
-![rofi](https://user-images.githubusercontent.com/84329097/141335969-4cc5440c-342c-431b-bd89-693efd947a4a.gif)
+![rofi](https://user-images.githubusercontent.com/84329097/175645627-198f778a-6fe6-400e-9f6c-2c41cfa08e7d.gif)
 
 <hr>
 
