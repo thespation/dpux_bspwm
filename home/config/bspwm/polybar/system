@@ -15,14 +15,14 @@
 ;;
 ;; Polybar Variables For Modules :
 ;; card = ${system.graphics_card}
-;; battery = ${system.battery}
+;; battery = BAT0
 ;; adapter = AC
 ;; interface = ${system.network_interface}
 
 [system]
 adapter = AC
-battery = BAT1
+battery = BAT0
 graphics_card = amdgpu_bl0
-network_interface = enp0s3
+network_interface = wlp12s0
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
