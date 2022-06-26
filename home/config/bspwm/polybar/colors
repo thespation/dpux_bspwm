@@ -1,0 +1,20 @@
+[color]
+
+FOREGROUND = #f8f8f2
+BACKGROUND = #323f4e
+BLACK = #3d4c5f
+RED = #f48fb1
+GREEN = #a1efd3
+YELLOW = #f1fa8c
+BLUE = #92b6f4
+MAGENTA = #bd99ff
+CYAN = #87dfeb
+WHITE = #f8f8f2
+ALTBLACK = #56687e
+ALTRED = #ee4f84
+ALTGREEN = #53e2ae
+ALTYELLOW = #f1ff52
+ALTBLUE = #6498ef
+ALTMAGENTA = #985eff
+ALTCYAN = #24d1e7
+ALTWHITE = #e5e5e5
