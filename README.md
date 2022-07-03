@@ -7,7 +7,7 @@
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/thespation/dpux_bspwm">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/thespation/dpux_bspwm">
 <img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/y/thespation/dpux_bspwm">
-<a href="#"><img src="https://badges.pufler.dev/visits/thespation/dpux_bspwm">
+<!-- <a href="#"><img src="https://badges.pufler.dev/visits/thespation/dpux_bspwm"> -->
 
  <p align="center">
  <a href="https://github.com/thespation/dpux_bspwm#sobre" target="_blank"><img alt="undefined" src="https://img.shields.io/badge/-Sobre-blue"></a>
