@@ -112,6 +112,7 @@ bspc rule -a Xfce4-display-manager desktop='^8' follow=on focus=on
 bspc rule -a Thunar-volman-settings desktop='^8' follow=on focus=on
 bspc rule -a Xfce4-mouse-settings desktop='^8' follow=on focus=on
 bspc rule -a Xfce4-keyboard-settings desktop='^8' follow=on focus=on
+bspc rule -a Nvidia-settings desktop='^8' follow=on focus=on
 declare -a settings=(Lxappearance Lxtask Lxrandr Arandr \
 System-config-printer.py Pavucontrol Exo-helper-1 \
 Xfce4-power-manager-settings)
