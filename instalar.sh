@@ -319,7 +319,7 @@ function PERSONA_DEBIAN()
 				mkdir ~/.config/neofetch
 				cp -rf /tmp/dpux_bspwm/home/debian/config.conf ~/.config/neofetch
 				cp -rf /tmp/dpux_bspwm/home/xubuntu/powermenu ~/.config/bspwm/rofi/bin
-				cp -rf /tmp/dpux_bspwm/home/xubuntu/powermenu.sh ~/.config/bspwm/rofi/bin
+				cp -rf /tmp/dpux_bspwm/home/debian/powermenu.rasi ~/.config/bspwm/rofi/themes
 				sudo cp -rf /tmp/dpux_bspwm/home/debian/nordico.png /usr/share/images/desktop-base/
 				sudo cp -rf /tmp/dpux_bspwm/home/debian/lightdm-gtk-greeter.conf /etc/lightdm/ &&
 			clear &&
