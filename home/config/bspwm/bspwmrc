@@ -60,6 +60,7 @@ bspc rule -a Gnome-terminal desktop='^1' follow=on focus=on
 
 # 2 > web
 bspc rule -a firefox desktop='^2' follow=on focus=on
+bspc rule -a Firefox-esr desktop='^2' follow=on focus=on
 bspc rule -a chromium desktop='^2' follow=on focus=on
 bspc rule -a Google-chrome desktop='^2' follow=on focus=on
 
