@@ -153,7 +153,7 @@ Seguem os atalho já configurados:
 
 ## Aplicativos
 <kbd>W</kbd> + <kbd>Enter</kbd> - Terminal <br>
-<kbd>W</kbd> + <kbd>Shift</kbd> + <kbd>t</kbd> - Gestor de arquivos (thunar ou nautilus)<br>
+<kbd>W</kbd> + <kbd>e</kbd> - Gestor de arquivos (thunar ou nautilus)<br>
 <kbd>W</kbd> + <kbd>Shift</kbd> + <kbd>w</kbd> - Firefox<br>
 <kbd>W</kbd> + <kbd>Shift</kbd> + <kbd>e</kbd> - Geany<br>
 <kbd>W</kbd> + <kbd>c</kbd> - Fechar janela em foco <br>
