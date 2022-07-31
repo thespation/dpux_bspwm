@@ -3,7 +3,7 @@
 
 ##---------- Keybindings for bspwm ----------##
 
-# Terminal (alacritty)
+# Terminal
 super + Return
 	gnome-terminal
 
@@ -40,12 +40,11 @@ super + n
 ##---------- Applications ----------##
 
 # Launch Apps
-super + shift + {f,w,e,t}
-	{pcmanfm,firefox,geany,nautilus}
-
-# Terminal Apps
-ctrl + alt + {v,n,r,h,b}
-	alacritty --config-file ~/.config/bspwm/alacritty/alacritty.yml -e {vim,nvim,ranger,htop,bashtop}
+super + shift + {f,w,e}
+	{pcmanfm,firefox,geany}
+	
+super + e
+	thunar
 
 # Color Picker
 super + p
