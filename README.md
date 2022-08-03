@@ -150,6 +150,7 @@ Seguem os atalho já configurados:
 ## Comandos internos
 <kbd>W</kbd> + <kbd>esc</kbd> - Recarregar atalhos (arquivos sxhkd)<br>
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>r</kbd>- Recarregar BSPWM<br>
+<kbd>W</kbd> + <kbd>l</kbd> - bloquear tela<br>
 
 ## Aplicativos
 <kbd>W</kbd> + <kbd>Enter</kbd> - Terminal <br>
