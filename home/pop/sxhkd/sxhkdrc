@@ -51,8 +51,8 @@ super + p
 	color-gpick
 
 # Lockscreen
-ctrl + alt + l
-    bsplock
+super + l
+    i3lock -c 000000
 
 ##---------- System Keys ----------##
 
