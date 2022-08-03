@@ -51,8 +51,8 @@ super + p
 	color-gpick
 
 # Lockscreen
-ctrl + alt + l
-    bsplock
+super + l
+    xflock4
 
 ##---------- System Keys ----------##
 
