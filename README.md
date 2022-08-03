@@ -60,16 +60,14 @@ Para que o script rode corretamente, é necessário ter o sistema, versão e DE 
     <tr>
         <td align="center"valign="center">Fedora</td>
         <td align="center"valign="center">36*</td>
-        <td align="center"valign="center">GNOME</td>
+        <td rowspan="3" align="center"valign="center">GNOME</td>
     </tr>
     <tr>
         <td>Pop!_OS</td>
         <td rowspan="3" align="center"valign="center">22.04</td>
-        <td align="center"valign="center">-</td>
-       </tr>
+     </tr>
      <tr>
         <td align="center"valign="center">Ubuntu</td>
-        <td align="center"valign="center">GNOME</td>
     </tr>
      <tr>
         <td align="center"valign="center">Xubuntu</td>
