@@ -59,7 +59,7 @@ Para que o script rode corretamente, é necessário ter o sistema, versão e DE 
     </tr>
     <tr>
         <td align="center"valign="center">Fedora</td>
-        <td align="center"valign="center">36</td>
+        <td align="center"valign="center">36*</td>
         <td align="center"valign="center">GNOME</td>
     </tr>
     <tr>
