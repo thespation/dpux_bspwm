@@ -405,8 +405,8 @@ function NOTF_FALHA()
 		echo "#--------Esse script foi desenvolvido para rodar nas seguintes distros:-------#"		
 		echo "#-----------------Debian Bullseye ou Bookworm (xfce e gnome)------------------#"
 		echo "#------------------------------Fedora GNOME-----------------------------------#"
-		echo "#------------------------------Pop!_Os 21.04----------------------------------#"
-		echo "#--------------------------Ubuntu ou Xubuntu 21.10----------------------------#"
+		echo "#------------------------------Pop!_Os 22.04----------------------------------#"
+		echo "#--------------------------Ubuntu ou Xubuntu 22.10----------------------------#"
 		echo "#----Caso esteja usando uma das citadas, é necessário ter 'inxi' instalado----#"
 	}
 		
