@@ -8,10 +8,10 @@ VERD="\033[0;32m"	#Deixa a saída na cor verde
 CIAN="\033[0;36m"	#Deixa a saída na cor ciano
 NORM="\033[0m"		#Volta para a cor padrão
 ## Alias
-CC="sudo cp -rf"				##Comando de cópia de arquivos
+CC="sudo cp -rf"		##Comando de cópia de arquivos
 GAT="/tmp/archcraft-themes/"	#Pasta temporária dos temas
-USRT="/usr/share/themes/"		#Pasta dos temas do sistema
-FP="/files/*"					#Alias para o final do nome das pastas de temas
+USRT="/usr/share/themes/"	#Pasta dos temas do sistema
+FP="/files/*"			#Alias para o final do nome das pastas de temas
 
 #Funções
 	# BAT - Testa/baixa se existe a pasta de temas
@@ -41,7 +41,7 @@ INSTEMA () {
 		$GAT'archcraft-gtk-theme-spark'$FP $GAT'archcraft-gtk-theme-sweet'$FP $GAT'archcraft-gtk-theme-wave'$FP \
 		$GAT'archcraft-gtk-theme-white'$FP $GAT'archcraft-gtk-theme-windows'$FP $USRT
 				
-	if [[ -d "$USRT/Spark" || "$USRT/Sweet-Dark" ]]; then #Verifica se as pastas estão o lugar certo
+	if [[ -d "$USRT/Spark" || "$USRT/Sweet-Dark" ]]; then #Verifica se as pastas estão no lugar certo
 		ls $USRT #Exibe a pasta de temas
 		echo -e "\n${VERD}[*] Temas copiados para a pasta" $USRT ${NORM} #Notifica sucesso
 	else
