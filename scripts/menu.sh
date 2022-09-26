@@ -15,35 +15,25 @@ CURL='curl -s'
 #Menu de seleção, possibilidades disponíveis
 MENU () {
 	echo -e "\n${CIAN}[ ] Escolha uma das opções disponíveis\n" ${NORM}
-	echo -e "[1] Instalar APENAS a base BSPWM (sem as personalizações)" ${NORM}
-	echo -e "[2] Copiar os arquivos personalizados (sem instalar a base e personalizações)" ${NORM}
-	echo -e "[3] Instalar todos os ícones" ${NORM}
-	echo -e "[4] Instalar todos os temas" ${NORM}
-	echo -e "[5] Instalar todos os ícones e temas" ${NORM}
-	echo -e "${VERD}[6] Todas as opções juntas (instalar e configurar)" ${NORM}
-	echo -e "${VERM}[7] Sair\n" ${NORM}
+	echo -e "${VERD}[1] Instalar e configurar BSPWM personalizado" ${NORM}
+	echo -e "[2] Instalar apenas os ícones" ${NORM}
+	echo -e "[3] Instalar apenas os temas" ${NORM}
+	echo -e "[4] Instalar todos os ícones e temas" ${NORM}
+	echo -e "${VERM}[5] Sair\n" ${NORM}
 	echo -e "\n[ ] Digite a opção desejada:" ${NORM}
 	read resposta ; case $resposta in
-		1) BASE 	;;
-		2) PERSONA 	;;
-		3) ICONS 	;;
-		4) TEMAS 	;;
-		5) ICOTHE	;;
-		6) TODOS	;;
-		7) exit		;;
+		1) BSPWMPERS 	;;
+		2) ICONS 	;;
+		3) TEMAS 	;;
+		4) ICOTHE	;;
+		5) exit		;;
 		*) "Opção desconhecida." ; echo ; MENU ;;
 	esac
 }
 
 #Caso seja escolhida a opção [1] base bspwm
-BASE () {
+BSPWMPERS () {
 	${CURL} ${GIT}base.sh | bash
-	MENU
-}
-
-PERSONA () {
-	#${CURL} ${GIT}persona.sh | bash
-	echo -e "\n${VERM}[!] Script sendo produzido\n" ${NORM}
 	MENU
 }
 
@@ -62,9 +52,6 @@ ICOTHE () {
 	${CURL} ${GIT}temas.sh | bash
 	MENU
 }
-
-TODOS () {
-	#${CURL} ${GIT}todos.sh | bash
 	echo -e "${VERD}[*] Tudo instalado e configurado. Aproveite!" ${NORM}
 }
 
