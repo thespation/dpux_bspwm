@@ -8,8 +8,9 @@ VERD="\033[0;32m"	#Deixa a saída na cor verde
 CIAN="\033[0;36m"	#Deixa a saída na cor ciano
 NORM="\033[0m"		#Volta para a cor padrão
 # Alias de instalação
-SUDD='sudo apt' #Base Debian
-SUDF='sudo dnf' #Fedora
+SUDD='sudo apt' 	#Base Debian
+SUDF='sudo dnf' 	#Fedora
+INXI=`inxi -S` 		#Necessário para identifiar a DE (xfce ou gnome)
 # Pacotes para instalação
 PACP="bspwm sxhkd rofi picom polybar dunst" #Base BSPWM
 PACC="neofetch htop feh geany dmenu nm-tray xfconf xsettingsd xfce4-power-manager" #Comum a todos os sistemas
