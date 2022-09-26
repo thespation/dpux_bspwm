@@ -8,10 +8,10 @@ VERD="\033[0;32m"	#Deixa a saída na cor verde
 CIAN="\033[0;36m"	#Deixa a saída na cor ciano
 NORM="\033[0m"		#Volta para a cor padrão
 ## Alias
-CC="sudo cp -rf"			#Comando de cópia de arquivos
+CC="sudo cp -rf"		#Comando de cópia de arquivos
 GAT="/tmp/archcraft-icons/"	#Pasta temporária dos ícones
 USRT="/usr/share/icons/"	#Pasta dos ícones do sistema
-FP="/files/*"				#Alias para o final do nome das pastas de ícones
+FP="/files/*"			#Alias para o final do nome das pastas de ícones
 
 #Funções
 	# BAT - Testa/baixa se existe a pasta de ícones
@@ -38,7 +38,7 @@ INSTEMA () {
 		$GAT'archcraft-icons-numix'$FP $GAT'archcraft-icons-papirus'$FP $GAT'archcraft-icons-qogir'$FP \
 		$GAT'archcraft-icons-white'$FP $GAT'archcraft-icons-win11'$FP $GAT'archcraft-icons-zafiro'$FP $USRT
 				
-	if [[ -d "$USRT/Luv-Folders-Dark" || "$USRT/Nordic-Folders" ]]; then #Verifica se as pastas estão o lugar certo
+	if [[ -d "$USRT/Luv-Folders-Dark" || "$USRT/Nordic-Folders" ]]; then #Verifica se as pastas estão no lugar certo
 		ls $USRT #Exibe a pasta de ícones
 		echo -e "\n${VERD}[*] Ícones copiados para a pasta" $USRT ${NORM} #Notifica sucesso
 	else
