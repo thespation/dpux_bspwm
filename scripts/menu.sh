@@ -20,14 +20,14 @@ MENU () {
 	echo -e "[3] Instalar apenas os temas" ${NORM}
 	echo -e "[4] Instalar todos os ícones e temas" ${NORM}
 	echo -e "${VERM}[5] Sair\n" ${NORM}
-	echo -e "\n[ ] Digite a opção desejada:" ${NORM}
+	echo -e "\n[ ] Digite a opção desejada:\n" ${NORM}
 	read resposta ; case $resposta in
 		1) BSPWMPERS 	;;
 		2) ICONS 	;;
 		3) TEMAS 	;;
 		4) ICOTHE	;;
 		5) exit		;;
-		*) "Opção desconhecida." ; echo ; MENU ;;
+		*) echo -e "${VERM}\nOpção desconhecida\n${NORM}" ; MENU ;;
 	esac
 }
 
