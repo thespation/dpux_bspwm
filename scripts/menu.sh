@@ -52,7 +52,7 @@ ICOTHE () {
 	${CURL} ${GIT}temas.sh | bash
 	MENU
 	
-	echo -e "${VERD}[*] Tudo instalado e configurado. Aproveite!" ${NORM}
+	#echo -e "${VERD}[*] Tudo instalado e configurado. Aproveite!" ${NORM}
 }
 
 # Iniciar Menu
