@@ -51,7 +51,7 @@ ICOTHE () {
 	${CURL} ${GIT}icones.sh | bash &&
 	${CURL} ${GIT}temas.sh | bash
 	MENU
-}
+	
 	echo -e "${VERD}[*] Tudo instalado e configurado. Aproveite!" ${NORM}
 }
 
