@@ -17,3 +17,15 @@ curl -s https://raw.githubusercontent.com/thespation/dpux_bspwm/main/scripts/tem
 ```
 curl -s https://raw.githubusercontent.com/thespation/dpux_bspwm/main/scripts/icones.sh | bash
 ```
+
+## Estrutura
+
+````
+dpux_bspwm/scripts
+  └── Instalar              : Verifica se a distro é compatível
+      ├── base              : Instala a base estrutural bspwm
+      ├── persona.comum     : Porsonalizações comuns a todas a distros
+      │   └── icones        : Icones personalizados
+      │   └── temas         : Temas personalizados
+      └── *Distro           : Script voltado a personalização individual
+````
