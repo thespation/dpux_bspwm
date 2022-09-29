@@ -24,7 +24,7 @@ BAT () {
 		echo -e "\n${CIAN}[ ] Baixando os ícones para" ${GAT} ${NORM}
 		cd /tmp && git clone https://github.com/archcraft-os/archcraft-icons &&
 		chmod 755 archcraft-themes/* -R #Concede permissão à pasta baixada
-		echo -e "\n${VERD}[*] ícones na pasta" ${GAT} ${NORM}
+		echo -e "${VERD}[*] ícones na pasta" ${GAT} ${NORM}
 		INSTEMA
 	else
 		echo -e "\n${VERM}[!] Não foi possível copiar os ícones\n" ${NORM} #Notifica em caso de falha
@@ -40,7 +40,7 @@ INSTEMA () {
 				
 	if [[ -d "$USRT/Luv-Folders-Dark" || "$USRT/Nordic-Folders" ]]; then #Verifica se as pastas estão no lugar certo
 		ls $USRT #Exibe a pasta de ícones
-		echo -e "\n${VERD}[*] Ícones copiados para a pasta" $USRT ${NORM} #Notifica sucesso
+		echo -e "${VERD}[*] Ícones copiados para a pasta" $USRT ${NORM} #Notifica sucesso
 	else
 		echo -e "\n${VERM}[!] Não foi possível copiar os ícones\n" ${NORM} #Notifica em caso de falha
 	fi
