@@ -21,7 +21,7 @@ PACDX="thunar-archive-plugin catfish baobab meld" #Somente para Xfce. Para Xubun
 
 #Responsável por atualizar o sistema, instalar a base BSPWM e apps complementares
 ATUAS () { 
-	if [[ ${INXI} = *Debian* || *Ubuntu* || *Pop* ]]; then #Testa se é base Debian
+	if [[ ${INXI} = *Debian* || ${INXI} = *Ubuntu* || ${INXI} = *Pop* ]]; then #Testa se é base Debian
 			echo -e "\n${CIAN}[ ] Atualizar sistema" ${NORM}
 				${SUDD} update && ${SUDD} upgrade -y && ${SUDD} dist-upgrade -y &&
 				${SUDD} autoclean && ${SUDD} autoremove -y &&
