@@ -17,6 +17,7 @@ PAST="/tmp/dpux_bspwm/scripts/"
 VERI () {
 		if [[ ${INXI} = *Xfce* && ${INXI} = ${VERU} && ${INXI} = *Ubuntu* ]]; then #Testa se é Xubuntu
 			inxi -S ; echo -e "\n${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && sleep 3s
+			curl -s https://raw.githubusercontent.com/thespation/dpux_bspwm/main/scripts/temas.sh | bash
 			#./scripts/xubuntu.sh
 		elif [[ $ID = "Distributor ID:	Pop" && $RELEASE = "Release:	22.04" ]]; then #Testa se é o PopOs
 			inxi -S ; echo -e "\n${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && sleep 3s
