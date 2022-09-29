@@ -16,7 +16,7 @@ PAST="/tmp/dpux_bspwm/scripts/"
 # Verificação da distro base
 VERI () {
 		if [[ ${INXI} = *Xfce* && ${INXI} = ${VERU} && ${INXI} = *Ubuntu* ]]; then #Testa se é Xubuntu
-			inxi -S
+			${INXI}
 			echo -e "\n${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && sleep 3s
 			curl -s https://raw.githubusercontent.com/thespation/dpux_bspwm/main/scripts/temas.sh | bash
 			#./scripts/xubuntu.sh
