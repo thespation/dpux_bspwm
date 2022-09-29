@@ -11,6 +11,8 @@ NORM="\033[0m"		#Volta para a cor padrão
 SUDD='sudo apt' 	#Base Debian
 SUDF='sudo dnf' 	#Fedora
 INXI=`inxi -S` 		#Necessário para identifiar a DE (xfce ou gnome)
+GIT='https://raw.githubusercontent.com/thespation/dpux_bspwm/main/scripts/' #Pasta dos scripts
+CURL='curl -s'		#Comando para execução do scritp, sem baixar
 # Pacotes para instalação
 PACP="bspwm sxhkd rofi picom polybar dunst" #Base BSPWM
 PACC="neofetch htop feh geany dmenu nm-tray xfconf xsettingsd xfce4-power-manager" #Comum a todos os sistemas
@@ -24,7 +26,6 @@ ATUAS () {
 				${SUDD} update && ${SUDD} upgrade -y && ${SUDD} dist-upgrade -y &&
 				${SUDD} autoclean && ${SUDD} autoremove -y &&
 			echo -e "${VERD}[*] Sistema atualizado" ${NORM} && sleep 3s
-			
 			echo -e "\n${CIAN}[ ] Instalar base BSPWM" ${NORM}
 				${SUDD} install ${PACP} -y &&
 			echo -e "${VERD}[*] Base BSPWM instalada com sucesso" ${NORM}
@@ -54,7 +55,7 @@ KSUD () {
 		cd ksuperkey
 		make && sudo make install &&
 	echo -e "${VERD}[*] Tecla Super habilitada com sucesso" ${NORM}
-	${APPSC}
+	APPSC
 }
 
 #Responsável por habilitar o menu iniciar na tecla super, Fedora
@@ -65,7 +66,7 @@ KSUF () {
 		sudo systemctl enable --now snapd.socket && sudo systemctl start --now snapd.socket
 		sudo systemctl restart --now snapd.socket && sudo snap install ksuperkey		
 	echo -e "${VERD}[*] Tecla Super habilitada com sucesso" ${NORM}
-	${APPSC}
+	APPSC
 }
 
 #Aplicativos específicos a Xfce ou GNOME
@@ -73,19 +74,26 @@ APPSC () {
 	if [[ ${INXI} = *Xfce* && ${INXI} = *Debian* || *Ubuntu* ]]; then #Testa se é base Debian Xfce
 			echo -e "\n${CIAN}[ ] Instalar APPs para Xfce" ${NORM}
 				${SUDD} install ${PACDX} -y &&
-			echo -e "\n${VERD}[*] Apps xfce instalados: \"${PACDX} \" " ${NORM}
+			echo -e "${VERD}[*] Apps xfce instalados: \"${PACDX} \" " ${NORM}
 	elif [[ ${INXI} = *GNOME* && ${INXI} = *Debian* || *Ubuntu* || *Pop* ]]; then #Testa se é Debian GNOME
 			echo -e "\n${CIAN}[ ] Instalar APPs para GNOME" ${NORM}
 				${SUDD} install ${PACDG} -y &&
-			echo -e "\n${VERD}[*] Apps GNOME instalados: \"${PACDX} \" " ${NORM}
+			echo -e "${VERD}[*] Apps GNOME instalados: \"${PACDX} \" " ${NORM}
 	elif [[ ${INXI} = *GNOME* && ${INXI} = *Fedora* ]]; then
-			echo -e "\n${CIAN}[ ] Instalar APPs para GNOME" ${NORM}
+			echo -e "\n${CIAN}[ ] Instalar APPs para Fedora" ${NORM}
 				${SUDF} install -y ${PACC} ${PACDG}&&
-			echo -e "\n${VERD}[*] Apps GNOME instalados: \"${PACC} \" " ${NORM}
+			echo -e "${VERD}[*] Apps GNOME instalados: \"${PACC} \" " ${NORM}
 	else
 		echo -e "${VERM}[!] Não foi possível instalar" ${NORM}
 	fi
 }
 
+#Instalação dos ícones, temas e personalizações comuns
+PERCOM () {
+	{CURL} ${GIT}temas.sh | bash
+	{CURL} ${GIT}icones.sh | bash
+	{CURL} ${GIT}persona.comum.sh | bash
+}
+
 # Iniciar verificação
-ATUAS
+ATUAS && PERCOM
