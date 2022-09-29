@@ -138,37 +138,47 @@ Seguem os atalho já configurados:
 <br>(Legenda: <kbd> W</kbd> = Tecla Windows)
 
 ## Menus
-<kbd>W</kbd> ou <kbd>alt</kbd> + <kbd>F1</kbd> - Menu de aplicativos <br>
-<kbd>W</kbd> + <kbd>w</kbd> - Mostra programas abertos (tecla Windows mais a tecla "w") <br>
-<kbd>W</kbd> + <kbd>x</kbd> - Menu com opções de desligamento <br>
-<kbd>W</kbd> + <kbd>d</kbd> - dmenu (menu alternativo ao Rofi) <br>
-<kbd>W</kbd> + <kbd>N</kbd> - Menu para gerenciar conexões <br>
-<kbd>Ctrl</kbd> + <kbd>alt</kbd> + <kbd>t</kbd> - Seletor de tema <br>
+| Teclas | Ação |
+| --- | --- |
+| <kbd>W</kbd> ou <kbd>alt</kbd> ou <kbd>F1</kbd> | Menu de aplicativos |
+| <kbd>W</kbd> + <kbd>w</kbd> | Mostra programas abertos (tecla Windows mais a tecla "w") |
+| <kbd>W</kbd> + <kbd>x</kbd> | Menu com opções de desligamento |
+| <kbd>W</kbd> + <kbd>d</kbd> | dmenu (menu alternativo ao Rofi) |
+| <kbd>W</kbd> + <kbd>N</kbd> | Menu para gerenciar conexões |
+| <kbd>Ctrl</kbd> + <kbd>alt</kbd> + <kbd>t</kbd> | Seletor de tema |
 
 ## Comandos internos
-<kbd>W</kbd> + <kbd>esc</kbd> - Recarregar atalhos (arquivos sxhkd)<br>
-<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>r</kbd>- Recarregar BSPWM<br>
-<kbd>W</kbd> + <kbd>l</kbd> - bloquear tela<br>
+| Teclas | Ação |
+| --- | --- |
+| <kbd>W</kbd> + <kbd>esc</kbd> | Recarregar atalhos (arquivos sxhkd) |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>r</kbd> | Recarregar BSPWM |
+| <kbd>W</kbd> + <kbd>l</kbd> | bloquear tela |
 
 ## Aplicativos
-<kbd>W</kbd> + <kbd>Enter</kbd> - Terminal <br>
-<kbd>W</kbd> + <kbd>e</kbd> - Gestor de arquivos (thunar ou nautilus)<br>
-<kbd>W</kbd> + <kbd>Shift</kbd> + <kbd>w</kbd> - Firefox<br>
-<kbd>W</kbd> + <kbd>Shift</kbd> + <kbd>e</kbd> - Geany<br>
-<kbd>W</kbd> + <kbd>c</kbd> - Fechar janela em foco <br>
+| Teclas | Ação |
+| --- | --- |
+| <kbd>W</kbd> + <kbd>Enter</kbd> | Terminal |
+| <kbd>W</kbd> + <kbd>e</kbd> | Gestor de arquivos (thunar ou nautilus) |
+| <kbd>W</kbd> + <kbd>Shift</kbd> + <kbd>w</kbd> | Firefox |
+| <kbd>W</kbd> + <kbd>Shift</kbd> + <kbd>e</kbd> | Geany |
+| <kbd>W</kbd> + <kbd>c</kbd> | Fechar janela em foco |
 
 ## Áreas de trabalho
-<kbd>W</kbd> + <kbd>1-8</kbd> - Troca de área de trabalho <br>
-<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>←/→</kbd> - Troca de área de trabalho para a ao lado<br>
+| Teclas | Ação |
+| --- | --- |
+| <kbd>W</kbd> + <kbd>1-8</kbd> | Troca de área de trabalho |
+| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>←/→</kbd> | Troca de área de trabalho para a ao lado |
 
 ## Gerenciar Janelas
-<kbd>W</kbd> + <kbd>Shift</kbd> + <kbd>1-8</kbd> - Envia app em foco para a área de trabalho desejada <br>
-<kbd>W</kbd> + <kbd>Barra de espaço</kbd> - troca entre modo tiling / floating <br>
-<kbd>W</kbd> + <kbd>F</kbd> - modo uma janela em tela cheia <br>
-<kbd>W</kbd> + <kbd>H/V/Q</kbd> - Prepara a divisão do app na Horizontal, Vertical ou Cancela <br>
-<kbd>W</kbd> + <kbd>TAB</kbd> - Volta para último app aberto <br>
-<kbd>W</kbd> + <kbd>Ctrl</kbd> + <kbd>←/→/↑ /↓ </kbd> - Expande a janela em foco <br>
-<kbd>W</kbd> + <kbd>Alt</kbd> + <kbd>←/→/↑ /↓</kbd> - Diminuir a janela em foco <br>
+| Teclas | Ação |
+| --- | --- |
+| <kbd>W</kbd> + <kbd>Shift</kbd> + <kbd>1-8</kbd> | Envia app em foco para a área de trabalho desejada |
+| <kbd>W</kbd> + <kbd>Barra de espaço</kbd>|- troca entre modo tiling / floating |
+| <kbd>W</kbd> + <kbd>F</kbd> | modo uma janela em tela cheia |
+| <kbd>W</kbd> + <kbd>H/V/Q</kbd> | Prepara a divisão do app na Horizontal, Vertical ou Cancela |
+| <kbd>W</kbd> + <kbd>TAB</kbd> | Volta para último app aberto |
+| <kbd>W</kbd> + <kbd>Ctrl</kbd> + <kbd>←/→/↑ /↓ </kbd> | Expande a janela em foco |
+| <kbd>W</kbd> + <kbd>Alt</kbd> + <kbd>←/→/↑ /↓</kbd> | Diminuir a janela em foco |
 
 <hr>
 
