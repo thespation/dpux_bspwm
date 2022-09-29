@@ -6,19 +6,22 @@
 VERM="\033[1;31m"	#Deixa a saída na cor vermelho
 VERD="\033[0;32m"	#Deixa a saída na cor verde
 NORM="\033[0m"		#Volta para a cor padrão
+
+set -e #Termina, em caso de erro de execução
+
 # Alias de identificação de distro
-INXI=`inxi -S` 				#Necessário para identifiar a DE (xfce ou gnome)
-RELEASE=`lsb_release -r`		#Identifica a versão da distro
-VERU="22.04" 				#Utual versão do Ubuntu
-ID=`lsb_release -i`			#Identifica qual distro é
+INXI=`inxi -S` 			#Necessário para identifiar a DE (xfce ou gnome)
+RELEASE=`lsb_release -r`	#Identifica a versão da distro
+VERU="22.04" 			#Utual versão do Ubuntu
+ID=`lsb_release -i`		#Identifica qual distro é
 GIT='https://raw.githubusercontent.com/thespation/dpux_bspwm/main/scripts/' #Pasta dos scripts
-CURL='curl -s'				#Comando para execução do scritp, sem baixar
+CURL='curl -s'			#Comando para execução do scritp, sem baixar
 
 # Verificação da distro base
 VERI () {
 		if [[ ${INXI} = *Xfce* && ${INXI} = ${VERU} && ${INXI} = *Ubuntu* ]]; then #Testa se é Xubuntu
 			${INXI} ; echo -e "\n${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && sleep 3s
-			{CURL} ${GIT}base.sh | bash ; {CURL} ${GIT}xubuntu.sh | bash
+			{CURL} ${GIT}base.sh | bash && {CURL} ${GIT}xubuntu.sh | bash
 			
 		elif [[ $ID = "Distributor ID:	Pop" && $RELEASE = "Release:	22.04" ]]; then #Testa se é o PopOs
 			${INXI} ; echo -e "\n${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && sleep 3s
