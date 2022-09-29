@@ -92,7 +92,7 @@ APPSC () {
 PERCOM () {
 	{CURL} ${GIT}temas.sh | bash
 	{CURL} ${GIT}icones.sh | bash
-	{CURL} ${GIT}persona.comum.sh | bash
+	#{CURL} ${GIT}persona.comum.sh | bash
 }
 
 # Iniciar verificação
