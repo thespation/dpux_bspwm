@@ -19,13 +19,13 @@ COP="cp -rf"			SCOP="sudo cp -rf"
 # Copiar arquivos personalizados para Xubuntu
 COPI () {
 	echo -e "\n${CIAN}[ ] Iniciar processo de cópia" ${NORM}
-		${COP} ${PTMP}.fehbg $HOME											#Arquivo responsável pelo papel de parede
-		${COP} ${PTMP}powermenu ${PASTA}bspwm/rofi/bin						#Arquivos responsável pelo menu de desligamento
-		${SCOP} ${PTMP}nordico.png /usr/share/xfce4/backdrops/				#Papel de parede nordico para o Xubuntu
-		PNEOF && mkdir -p ${PASTA}/neofetch									#Arquivos para exibição personalizada do neofetch
-		${COP} ${PTMP}config.conf ${PASTA}/neofetch							#Arquivos para exibição personalizada do neofetch
-		PTHUN && ${COP} ${PTMP}Thunar/ ${PASTA}								#Arquivos para ações personalizadas no Thunar
-		PSXHK && ${COP} ${PTMP}sxhkd/sxhkdrc ${PASTA}sxhkd/					#Responsável pelas teclas de atalhos
+		${COP} ${PTMP}.fehbg $HOME						#Arquivo responsável pelo papel de parede
+		${COP} ${PTMP}powermenu ${PASTA}bspwm/rofi/bin				#Arquivos responsável pelo menu de desligamento
+		${SCOP} ${PTMP}nordico.png /usr/share/xfce4/backdrops/			#Papel de parede nordico para o Xubuntu
+		PNEOF && mkdir -p ${PASTA}/neofetch					#Arquivos para exibição personalizada do neofetch
+		${COP} ${PTMP}config.conf ${PASTA}/neofetch				#Arquivos para exibição personalizada do neofetch
+		PTHUN && ${COP} ${PTMP}Thunar/ ${PASTA}					#Arquivos para ações personalizadas no Thunar
+		PSXHK && ${COP} ${PTMP}sxhkd/sxhkdrc ${PASTA}sxhkd/			#Responsável pelas teclas de atalhos
 		PLIGH && ${SCOP} ${PTMP}lightdm-gtk-greeter.conf /etc/lightdm/		#Personalização do LightDM
 	echo -e "${VERD}[*] Arquivos de personalização copiados" ${NORM}
 }
