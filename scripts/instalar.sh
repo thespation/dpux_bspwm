@@ -18,8 +18,8 @@ CURL='curl -s'				#Comando para execução do scritp, sem baixar
 VERI () {
 		if [[ ${INXI} = *Xfce* && ${INXI} = ${VERU} && ${INXI} = *Ubuntu* ]]; then #Testa se é Xubuntu
 			${INXI} ; echo -e "\n${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && sleep 3s
-			{CURL} ${GIT}base.sh | bash
-			#./scripts/xubuntu.sh
+			{CURL} ${GIT}base.sh | bash ; {CURL} ${GIT}xubuntu.sh | bash
+			
 		elif [[ $ID = "Distributor ID:	Pop" && $RELEASE = "Release:	22.04" ]]; then #Testa se é o PopOs
 			${INXI} ; echo -e "\n${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && sleep 3s
 			{CURL} ${GIT}base.sh | bash
@@ -45,7 +45,7 @@ VERI () {
 			echo "#-----------------Debian Bullseye ou Bookworm (xfce e gnome)------------------#"
 			echo "#------------------------------Fedora GNOME-----------------------------------#"
 			echo "#------------------------------Pop!_Os 22.04----------------------------------#"
-			echo "#--------------------------Ubuntu ou Xubuntu 22.10----------------------------#"
+			echo "#--------------------------Ubuntu ou Xubuntu 22.04----------------------------#"
 			echo -e "#----Caso esteja usando uma das citadas, é necessário ter 'inxi' instalado----#\n"		
 			sleep 3
 	fi
