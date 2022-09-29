@@ -406,7 +406,7 @@ function NOTF_FALHA()
 		echo "#-----------------Debian Bullseye ou Bookworm (xfce e gnome)------------------#"
 		echo "#------------------------------Fedora GNOME-----------------------------------#"
 		echo "#------------------------------Pop!_Os 22.04----------------------------------#"
-		echo "#--------------------------Ubuntu ou Xubuntu 22.10----------------------------#"
+		echo "#--------------------------Ubuntu ou Xubuntu 22.04----------------------------#"
 		echo "#----Caso esteja usando uma das citadas, é necessário ter 'inxi' instalado----#"
 	}
 		
