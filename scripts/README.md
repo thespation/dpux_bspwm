@@ -1,7 +1,6 @@
 ## Pré-requisito
 
-Para rodar o comando de instalação com sucesso, é necessário ter instalado em seu sistema:
-> `curl`
+Para rodar o comando de instalação com sucesso, é necessário ter instalado o `curl` em seu sistema:
 
 ## Instalação
 Em seu terminal, rode o comando abaixo:
@@ -18,7 +17,7 @@ curl -s https://raw.githubusercontent.com/thespation/dpux_bspwm/main/scripts/tem
 curl -s https://raw.githubusercontent.com/thespation/dpux_bspwm/main/scripts/icones.sh | bash
 ```
 
-## Estrutura
+## Estrutura (em desenvolvimento)
 
 ````
 dpux_bspwm/scripts
