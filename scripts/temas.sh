@@ -24,7 +24,7 @@ BAT () {
 		echo -e "\n${CIAN}[ ] Baixando os temas para" ${GAT} ${NORM}
 		cd /tmp && git clone https://github.com/archcraft-os/archcraft-themes &&
 		chmod 755 archcraft-themes/* -R #Concede permissão à pasta baixada
-		echo -e "\n${VERD}[*] Temas na pasta" ${GAT} ${NORM}
+		echo -e "${VERD}[*] Temas na pasta" ${GAT} ${NORM}
 		INSTEMA
 	else
 		FALH ${NORM} #Notifica em caso de falha
@@ -43,7 +43,7 @@ INSTEMA () {
 				
 	if [[ -d "$USRT/Spark" || "$USRT/Sweet-Dark" ]]; then #Verifica se as pastas estão no lugar certo
 		ls $USRT #Exibe a pasta de temas
-		echo -e "\n${VERD}[*] Temas copiados para a pasta" $USRT ${NORM} #Notifica sucesso
+		echo -e "${VERD}[*] Temas copiados para a pasta" $USRT ${NORM} #Notifica sucesso
 	else
 		echo -e "\n${VERM}[!] Não foi possível copiar os temas\n" ${NORM} #Notifica em caso de falha
 	fi
