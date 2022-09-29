@@ -55,7 +55,6 @@ KSUD () {
 		cd ksuperkey
 		make && sudo make install &&
 	echo -e "${VERD}[*] Tecla Super habilitada com sucesso" ${NORM}
-	APPSC
 }
 
 #Responsável por habilitar o menu iniciar na tecla super, Fedora
@@ -66,16 +65,15 @@ KSUF () {
 		sudo systemctl enable --now snapd.socket && sudo systemctl start --now snapd.socket
 		sudo systemctl restart --now snapd.socket && sudo snap install ksuperkey		
 	echo -e "${VERD}[*] Tecla Super habilitada com sucesso" ${NORM}
-	APPSC
 }
 
 #Aplicativos específicos a Xfce ou GNOME
 APPSC () {
-	if [[ ${INXI} = *Xfce* && ${INXI} = *Debian* || *Ubuntu* ]]; then #Testa se é base Debian Xfce
+	if [[ ${INXI} = *Xfce* && (${INXI} = *Debian* || ${INXI} = *Ubuntu*) ]]; then #Testa se é base Debian Xfce
 			echo -e "\n${CIAN}[ ] Instalar APPs para Xfce" ${NORM}
 				${SUDD} install ${PACDX} -y &&
 			echo -e "${VERD}[*] Apps xfce instalados: \"${PACDX} \" " ${NORM}
-	elif [[ ${INXI} = *GNOME* && ${INXI} = *Debian* || *Ubuntu* || *Pop* ]]; then #Testa se é Debian GNOME
+	elif [[ ${INXI} = *GNOME* && (${INXI} = *Debian* || ${INXI} = *Ubuntu* || ${INXI} = *Pop*) ]]; then #Testa se é Debian GNOME
 			echo -e "\n${CIAN}[ ] Instalar APPs para GNOME" ${NORM}
 				${SUDD} install ${PACDG} -y &&
 			echo -e "${VERD}[*] Apps GNOME instalados: \"${PACDX} \" " ${NORM}
@@ -96,4 +94,4 @@ PERCOM () {
 }
 
 # Iniciar verificação
-ATUAS && PERCOM
+ATUAS && APPSC && PERCOM
