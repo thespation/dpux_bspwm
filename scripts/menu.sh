@@ -27,7 +27,7 @@ MENU () {
 		3) TEMAS 	;;
 		4) ICOTHE	;;
 		5) exit		;;
-		#*) echo -e "${VERM}\nOpção desconhecida\n${NORM}" ; read ; MENU ;;
+		*) echo -e "${VERM}\nOpção desconhecida\n${NORM}" ; echo ; MENU ;;
 	esac
 }
 
