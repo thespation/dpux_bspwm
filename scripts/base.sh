@@ -22,28 +22,28 @@ PACDX="thunar-archive-plugin catfish baobab meld" #Somente para Xfce. Para Xubun
 #Responsável por atualizar o sistema, instalar a base BSPWM e apps complementares
 ATUAS () { 
 	if [[ ${INXI} = *Debian* || ${INXI} = *Ubuntu* || ${INXI} = *Pop* ]]; then #Testa se é base Debian
-			echo -e "\n${CIAN}[ ] Atualizar sistema" ${NORM}
-				${SUDD} update && ${SUDD} upgrade -y && ${SUDD} dist-upgrade -y &&
-				${SUDD} autoclean && ${SUDD} autoremove -y &&
-			echo -e "${VERD}[*] Sistema atualizado" ${NORM} && sleep 3s
-			echo -e "\n${CIAN}[ ] Instalar base BSPWM" ${NORM}
-				${SUDD} install ${PACP} -y &&
-			echo -e "${VERD}[*] Base BSPWM instalada com sucesso" ${NORM}
-			echo -e "\n${CIAN}[ ] Instalar APPs complementares" ${NORM}
-				${SUDD} install ${PACC} -y &&
-			echo -e "${VERD}[*] Apps instalados: \"${PACC} \" " ${NORM}
-			KSUD
+		echo -e "\n${CIAN}[ ] Atualizar sistema" ${NORM}
+			${SUDD} update && ${SUDD} upgrade -y && ${SUDD} dist-upgrade -y &&
+			${SUDD} autoclean && ${SUDD} autoremove -y &&
+		echo -e "${VERD}[*] Sistema atualizado" ${NORM} && sleep 3s
+		echo -e "\n${CIAN}[ ] Instalar base BSPWM" ${NORM}
+			${SUDD} install ${PACP} -y &&
+		echo -e "${VERD}[*] Base BSPWM instalada com sucesso" ${NORM}
+		echo -e "\n${CIAN}[ ] Instalar APPs complementares" ${NORM}
+			${SUDD} install ${PACC} -y &&
+		echo -e "${VERD}[*] Apps instalados: \"${PACC} \" " ${NORM}
+		KSUD
 	elif [[ ${INXI} = *Fedora* ]]; then
-			echo -e "\n${CIAN}[ ] Atualizar sistema" ${NORM}
-				${SUDF} update -y && ${SEGU} &&
-			echo -e "${VERD}[*] Sistema atualizado" ${NORM} && sleep 3s
-			
-			echo -e "\n${CIAN}[ ] Instalar base BSPWM" ${NORM}
-				${SUDF} -y ${PACP} &&
-			echo -e "${VERD}[*] Base BSPWM instalada com sucesso" ${NORM}
-			KSUF
+		echo -e "\n${CIAN}[ ] Atualizar sistema" ${NORM}
+			${SUDF} update -y && ${SEGU} &&
+		echo -e "${VERD}[*] Sistema atualizado" ${NORM} && sleep 3s
+		
+		echo -e "\n${CIAN}[ ] Instalar base BSPWM" ${NORM}
+			${SUDF} -y ${PACP} &&
+		echo -e "${VERD}[*] Base BSPWM instalada com sucesso" ${NORM}
+		KSUF
 	else
-			echo -e "${VERM}[!] Sistema, DE ou versão não suportada\n" ${NORM}
+		echo -e "${VERM}[!] Sistema, DE ou versão não suportada\n" ${NORM}
 	fi
 }
 
@@ -70,17 +70,17 @@ KSUF () {
 #Aplicativos específicos a Xfce ou GNOME
 APPSC () {
 	if [[ ${INXI} = *Xfce* && (${INXI} = *Debian* || ${INXI} = *Ubuntu*) ]]; then #Testa se é base Debian Xfce
-			echo -e "\n${CIAN}[ ] Instalar APPs para Xfce" ${NORM}
-				${SUDD} install ${PACDX} -y &&
-			echo -e "${VERD}[*] Apps xfce instalados: \"${PACDX} \" " ${NORM}
+		echo -e "\n${CIAN}[ ] Instalar APPs para Xfce" ${NORM}
+			${SUDD} install ${PACDX} -y &&
+		echo -e "${VERD}[*] Apps xfce instalados: \"${PACDX} \" " ${NORM}
 	elif [[ ${INXI} = *GNOME* && (${INXI} = *Debian* || ${INXI} = *Ubuntu* || ${INXI} = *Pop*) ]]; then #Testa se é Debian GNOME
-			echo -e "\n${CIAN}[ ] Instalar APPs para GNOME" ${NORM}
-				${SUDD} install ${PACDG} -y &&
-			echo -e "${VERD}[*] Apps GNOME instalados: \"${PACDX} \" " ${NORM}
+		echo -e "\n${CIAN}[ ] Instalar APPs para GNOME" ${NORM}
+			${SUDD} install ${PACDG} -y &&
+		echo -e "${VERD}[*] Apps GNOME instalados: \"${PACDX} \" " ${NORM}
 	elif [[ ${INXI} = *GNOME* && ${INXI} = *Fedora* ]]; then
-			echo -e "\n${CIAN}[ ] Instalar APPs para Fedora" ${NORM}
-				${SUDF} install -y ${PACC} ${PACDG}&&
-			echo -e "${VERD}[*] Apps GNOME instalados: \"${PACC} \" " ${NORM}
+		echo -e "\n${CIAN}[ ] Instalar APPs para Fedora" ${NORM}
+			${SUDF} install -y ${PACC} ${PACDG}&&
+		echo -e "${VERD}[*] Apps GNOME instalados: \"${PACC} \" " ${NORM}
 	else
 		echo -e "${VERM}[!] Não foi possível instalar" ${NORM}
 	fi
