@@ -20,7 +20,7 @@ CURL='curl -s'			#Comando para execução do scritp, sem baixar
 # Verificação da distro base
 VERI () {
 		if [[ ${INXI} = *Xfce* && ${INXI} = ${VERU} && ${INXI} = *Ubuntu* ]]; then #Testa se é Xubuntu
-			${INXI} ; echo -e "\n${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && sleep 3s
+			echo -e "\n${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && ${INXI} && sleep 3s
 			{CURL} ${GIT}base.sh | bash && {CURL} ${GIT}xubuntu.sh | bash
 			
 		elif [[ $ID = "Distributor ID:	Pop" && $RELEASE = "Release:	22.04" ]]; then #Testa se é o PopOs
