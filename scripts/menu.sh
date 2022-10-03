@@ -20,15 +20,21 @@ MENU () {
 	echo -e "[3] Instalar apenas os temas" ${NORM}
 	echo -e "[4] Instalar todos os ícones e temas" ${NORM}
 	echo -e "${VERM}[5] Sair\n" ${NORM}
-	echo -e "\n[ ] Digite a opção desejada:\n" ${NORM}
-	read resposta ; case $resposta in
-		1) BSPWMPERS 	;;
-		2) ICONS 	;;
-		3) TEMAS 	;;
-		4) ICOTHE	;;
-		5) exit		;;
-		*) echo -e "${VERM}\nOpção desconhecida\n${NORM}" ; echo ; MENU ;;
-	esac
+	read -p "[?] Digite a opção desejada: "
+
+	if [[ $REPLY == "1" ]]; then
+		BSPWMPERS
+	elif [[ $REPLY == "2" ]]; then
+		ICONS
+	elif [[ $REPLY == "3" ]]; then
+		TEMAS
+	elif [[ $REPLY == "4" ]]; then
+		ICOTHE
+	elif [[ $REPLY == "5" ]]; then
+		exit 1
+	else
+		echo -e "echo -e "${VERM}\nOpção desconhecida\n${NORM}" ;  MENU"
+	fi
 }
 
 #Caso seja escolhida a opção [1] base bspwm
@@ -48,8 +54,7 @@ TEMAS () {
 }
 
 ICOTHE () {
-	${CURL} ${GIT}icones.sh | bash &&
-	${CURL} ${GIT}temas.sh | bash
+	${CURL} ${GIT}icones.sh | bash && ${CURL} ${GIT}temas.sh | bash
 	MENU	
 }
 
