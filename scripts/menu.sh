@@ -16,9 +16,9 @@ CURL='curl -s'
 MENU () {
 	echo -e "\n${CIAN}[ ] Escolha uma das opções disponíveis\n" ${NORM}
 	echo -e "${VERD}[1] Instalar e configurar BSPWM personalizado" ${NORM}
-	echo -e "[2] Instalar apenas os ícones" ${NORM}
-	echo -e "[3] Instalar apenas os temas" ${NORM}
-	echo -e "[4] Instalar todos os ícones e temas" ${NORM}
+	echo -e "[2] Instalar apenas os ícones"
+	echo -e "[3] Instalar apenas os temas" 
+	echo -e "[4] Instalar todos os ícones e temas" 
 	echo -e "${VERM}[5] Sair\n" ${NORM}
 	read -p "[?] Digite a opção desejada: "
 
@@ -33,7 +33,7 @@ MENU () {
 	elif [[ $REPLY == "5" ]]; then
 		exit 1
 	else
-		echo -e "echo -e "${VERM}\nOpção desconhecida\n${NORM}" ;  MENU"
+		echo -e "${VERM}\nOpção desconhecida\n${NORM}" ; echo ;  MENU"
 	fi
 }
 
