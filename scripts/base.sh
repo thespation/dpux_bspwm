@@ -28,10 +28,10 @@ ATUAS () {
 		echo -e "${VERD}[*] Sistema atualizado" ${NORM} && sleep 3s
 		echo -e "\n${CIAN}[ ] Instalar base BSPWM" ${NORM}
 			${SUDD} install ${PACP} -y &&
-		echo -e "${VERD}[*] Base BSPWM instalada com sucesso" ${NORM}
+		echo -e "${VERD}[*] Base BSPWM instalada com sucesso: \"${PACP}\"" ${NORM}
 		echo -e "\n${CIAN}[ ] Instalar APPs complementares" ${NORM}
 			${SUDD} install ${PACC} -y &&
-		echo -e "${VERD}[*] Apps instalados: \"${PACC} \" " ${NORM}
+		echo -e "${VERD}[*] Apps instalados: \"${PACC}\" " ${NORM}
 		KSUD
 	elif [[ ${INXI} = *Fedora* ]]; then
 		echo -e "\n${CIAN}[ ] Atualizar sistema" ${NORM}
@@ -88,8 +88,8 @@ APPSC () {
 
 #Instalação dos ícones, temas e personalizações comuns
 PERCOM () {
-	{CURL} ${GIT}temas.sh | bash
-	{CURL} ${GIT}icones.sh | bash
+	${CURL} ${GIT}temas.sh | bash
+	${CURL} ${GIT}icones.sh | bash
 	#{CURL} ${GIT}persona.comum.sh | bash
 }
 
