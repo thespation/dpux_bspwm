@@ -82,7 +82,7 @@ APPSC () {
 			${SUDF} install -y ${PACC} ${PACDG}&&
 		echo -e "${VERD}[*] Apps GNOME instalados: \"${PACC} \" " ${NORM}
 	else
-		echo -e "${VERM}[!] Não foi possível instalar" ${NORM}
+		echo -e "\n${VERM}[!] Não foi possível instalar aplicativos complmentares" ${NORM}
 	fi
 }
 
