@@ -12,7 +12,7 @@ set -e #Termina, em caso de erro de execução
 # Alias de identificação de distro
 INXI=`inxi -S` 			#Necessário para identifiar a DE (xfce ou gnome)
 RELEASE=`lsb_release -r`	#Identifica a versão da distro
-VERU="22.04" 			#Utual versão do Ubuntu
+VERU="*22.04*" 			#Utual versão do Ubuntu
 ID=`lsb_release -i`		#Identifica qual distro é
 GIT='https://raw.githubusercontent.com/thespation/dpux_bspwm/main/scripts/' #Pasta dos scripts
 CURL='curl -s'			#Comando para execução do scritp, sem baixar
