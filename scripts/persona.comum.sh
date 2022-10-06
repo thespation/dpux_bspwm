@@ -20,7 +20,7 @@ USRP='/usr/local/bin'
 
 # Clonar o repositório com as personalizações
 BAIREP () {
-	echo -e "${CIAN}[ ] Baixar repositório ${REPO}" ${NORM}
+	echo -e "\n${CIAN}[ ] Baixar repositório ${REPO}" ${NORM}
 	cd /tmp && ${GIT} ${REPO} && chmod 755 dpux_bspwm/* -R
 	echo -e "${VERD}[*] Repositório na pasta temporária" ${NORM}
 	COPI
@@ -82,4 +82,4 @@ PGTK3 () {
 }
 
 # Inicia script
-clear; BAIREP
+BAIREP
