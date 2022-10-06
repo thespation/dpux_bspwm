@@ -72,7 +72,7 @@ APPSC () {
 	if [[ ${INXI} = *Xfce* && (${INXI} = *Debian* || ${INXI} = *Ubuntu*) ]]; then #Testa se é base Debian Xfce
 		echo -e "\n${CIAN}[ ] Instalar APPs para Xfce" ${NORM}
 			${SUDD} install ${PACDX} -y &&
-		echo -e "${VERD}[*] Apps xfce instalados: \"${PACDX} \" " ${NORM}
+		echo -e "${VERD}[*] Apps xfce instalados: \"${PACDX}\" " ${NORM}
 	elif [[ ${INXI} = *GNOME* && (${INXI} = *Debian* || ${INXI} = *Ubuntu* || ${INXI} = *Pop*) ]]; then #Testa se é Debian GNOME
 		echo -e "\n${CIAN}[ ] Instalar APPs para GNOME" ${NORM}
 			${SUDD} install ${PACDG} -y &&
