@@ -58,7 +58,5 @@ ICOTHE () {
 	MENU	
 }
 
-#echo -e "${VERD}[*] Tudo instalado e configurado. Aproveite!" ${NORM}
-
 # Iniciar Menu
 clear; MENU
