@@ -19,7 +19,7 @@ VERI () {
 	INXI=`inxi -S`			#Necessário para identifiar a DE (xfce ou gnome)
 	ID=`lsb_release -i`		#Identifica a versão da distro
 	RELEASE=`lsb_release -r`	#Identifica a versão da distro
-		if [[ $INXI = *Xfce* && $INXI = *22.04* && $INXI = *Ubuntu* ]]; thenn #Testa se é Xubuntu
+		if [[ $INXI = *Xfce* && $INXI = *22.04* && $INXI = *Ubuntu* ]]; then #Testa se é Xubuntu
 			echo -e "${VERD}[*] Sistema suportado, instalação seguirá" ${NORM}
 			inxi -S
 			${CURL} ${GIT}base.sh | bash && ${CURL} ${GIT}xubuntu.sh | bash
