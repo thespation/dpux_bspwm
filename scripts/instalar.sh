@@ -23,7 +23,6 @@ VERI () {
 			echo -e "${VERD}[*] Sistema suportado, instalação seguirá" ${NORM}
 			inxi -S
 			${CURL} ${GIT}base.sh | bash && ${CURL} ${GIT}xubuntu.sh | bash
-			
 		elif [[ $ID = "Distributor ID:	Pop" && $RELEASE = "Release:	22.04" ]]; then #Testa se é o PopOs
 			${INXI} ; echo -e "${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && sleep 3s
 			${CURL} ${GIT}base.sh | bash
