@@ -18,7 +18,7 @@ COP="cp -rf"			SCOP="sudo cp -rf"
 
 # Copiar arquivos personalizados para Xubuntu
 COPI () {
-	echo -e "\n${CIAN}[ ] Iniciar processo de cópia" ${NORM}
+	#echo -e "\n${CIAN}[ ] Iniciar processo de cópia" ${NORM}
 		${COP} ${PTMP}.fehbg $HOME						#Arquivo responsável pelo papel de parede
 		${COP} ${PTMP}powermenu ${PASTA}bspwm/rofi/bin				#Arquivos responsável pelo menu de desligamento
 		${SCOP} ${PTMP}nordico.png /usr/share/xfce4/backdrops/			#Papel de parede nordico para o Xubuntu
@@ -50,9 +50,9 @@ PTHUN () {
 
 # Verificar se existe o arquivo sxhkdrc, caso tenha faz backup antes de jogar o arquivo
 PSXHK () {
-	if [[ -f ${PASTA}sxhkd/sxhkdrc ]]; then
-		echo -e "\n${CIAN}[ ] Fazendo backup da arquivo sxhkdrc" ${NORM}
-		mv ${PASTA}sxhkd/sxhkdrc ${PASTA}sxhkd/sxhkdrc.bkp.${DATA}	
+	if [[ -d ${PASTA}sxhkd ]]; then
+		echo -e "\n${CIAN}[ ] Fazendo backup da arquivo sxhkd" ${NORM}
+		mv ${PASTA}sxhkd ${PASTA}sxhkd.bkp.${DATA}	
 		echo -e "${VERD}[*] Backup realizado com sucesso" ${NORM}
 	fi
 }
