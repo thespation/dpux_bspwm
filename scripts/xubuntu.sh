@@ -25,7 +25,7 @@ COPI () {
 		PNEOF && mkdir -p ${PASTA}/neofetch					#Arquivos para exibição personalizada do neofetch
 		${COP} ${PTMP}config.conf ${PASTA}/neofetch				#Arquivos para exibição personalizada do neofetch
 		PTHUN && ${COP} ${PTMP}Thunar/ ${PASTA}					#Arquivos para ações personalizadas no Thunar
-		PSXHK && ${COP} ${PTMP}sxhkd/sxhkdrc ${PASTA}sxhkd/			#Responsável pelas teclas de atalhos
+		PSXHK && ${COP} ${PTMP}sxhkd/ ${PASTA}					#Responsável pelas teclas de atalhos
 		PLIGH && ${SCOP} ${PTMP}lightdm-gtk-greeter.conf /etc/lightdm/		#Personalização do LightDM
 	echo -e "${VERD}[*] Arquivos de personalização copiados" ${NORM}
 }
