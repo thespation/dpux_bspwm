@@ -39,7 +39,7 @@ COPI () {
 	${SCOP} ${PTMP}xubuntu/apps_as_root.sh ${USRP}
 	${SCOP} ${PTMP}xubuntu/nmd ${USRP}
 	${SCOP} ${PTMP}xubuntu/askpass_rofi.sh ${USRP}
-	echo -e "${VERD}[*] Arquivos de personalização copiados" ${NORM}
+	#echo -e "${VERD}[*] Arquivos de personalização copiados" ${NORM}
 	
 	PBSPWM && PDUNST && PGEANY && PGTK3 &&
 	${COP} ${PTMP}config/* ~/.config
