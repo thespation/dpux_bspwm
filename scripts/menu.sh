@@ -33,7 +33,7 @@ MENU () {
 	elif [[ $REPLY == "5" ]]; then
 		exit 1
 	else
-		echo -e "${VERM}\nOpção desconhecida\n${NORM}" ; echo ;  MENU"
+		echo -e "\n${VERM}Opção desconhecida\n" ${NORM} ; echo ;  MENU"
 	fi
 }
 
