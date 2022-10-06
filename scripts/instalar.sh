@@ -21,7 +21,7 @@ VERI () {
 	RELEASE=`lsb_release -r`	#Identifica a versão da distro
 		if [[ $INXI = *Xfce* && $INXI = $VERU && $INXI = *Ubuntu* ]]; then #Testa se é Xubuntu
 			echo -e "${VERD}[*] Sistema suportado, instalação seguirá" ${NORM}
-			$ID; $RELEASE
+			echo -e "$ID $RELEASE"
 			${CURL} ${GIT}base.sh | bash && ${CURL} ${GIT}xubuntu.sh | bash
 		elif [[ $ID = "Distributor ID:	Pop" && $RELEASE = "Release:	22.04" ]]; then #Testa se é o PopOs
 			${INXI} ; echo -e "${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && sleep 3s
