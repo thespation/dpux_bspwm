@@ -11,7 +11,7 @@ NORM="\033[0m"		#Volta para a cor padrão
 set -e #Termina, em caso de erro de execução
 
 # Alias de identificação de distro
-VERU="*22.04*" 			#Utual versão do Ubuntu
+VERU="22.04" 			#Utual versão do Ubuntu
 GIT='https://raw.githubusercontent.com/thespation/dpux_bspwm/main/scripts/' #Pasta dos scripts
 CURL='curl -s'			#Comando para execução do scritp, sem baixar
 
@@ -20,7 +20,7 @@ VERI () {
 	INXI=`inxi -S`			#Necessário para identifiar a DE (xfce ou gnome)
 	ID=`lsb_release -i`		#Identifica a versão da distro
 	RELEASE=`lsb_release -r`	#Identifica a versão da distro
-		if [[ $INXI = *Xfce* && $INXI = $VERU && $INXI = *Ubuntu* ]]; then #Testa se é Xubuntu
+		if [[ $INXI = *Xfce* && $INXI = *$VERU* && $INXI = *Ubuntu* ]]; then #Testa se é Xubuntu
 			echo -e "${VERD}[*] Sistema suportado, instalação seguirá" ${NORM}
 			echo -e "${CIAN}[ ] Xubuntu $VERU" ${NORM}
 			${CURL} ${GIT}base.sh | bash && ${CURL} ${GIT}xubuntu.sh | bash
