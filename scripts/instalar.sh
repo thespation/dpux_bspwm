@@ -20,26 +20,27 @@ CURL='curl -s'			#Comando para execução do scritp, sem baixar
 # Verificação da distro base
 VERI () {
 		if [[ ${INXI} = *Xfce* && ${INXI} = ${VERU} && ${INXI} = *Ubuntu* ]]; then #Testa se é Xubuntu
-			echo -e "\n${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && ${INXI} && sleep 3s
+			echo -e "${VERD}[*] Sistema suportado, instalação seguirá" ${NORM}
+			${INXI}
 			${CURL} ${GIT}base.sh | bash && ${CURL} ${GIT}xubuntu.sh | bash
 			
 		elif [[ $ID = "Distributor ID:	Pop" && $RELEASE = "Release:	22.04" ]]; then #Testa se é o PopOs
-			${INXI} ; echo -e "\n${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && sleep 3s
+			${INXI} ; echo -e "${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && sleep 3s
 			${CURL} ${GIT}base.sh | bash
 		elif [[ ${INXI} = *Xfce* && "Distributor ID:	Debian" && (${RELEASE} = "Release:	testing" || ${RELEASE} = "Release:	11") ]]; then #Testa se é Debian xfce
-			${INXI} ; echo -e "\n${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && sleep 3s
+			${INXI} ; echo -e "${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && sleep 3s
 			${CURL} ${GIT}base.sh | bash
 			${PAST}base.sh
 		elif [[ ${INXI} = *GNOME* && ${INXI} = ${VERU} && ${INXI} = *Ubuntu* ]]; then #Testa se é Ubuntu
-			${INXI} ; echo -e "\n${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && sleep 3s
+			${INXI} ; echo -e "${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && sleep 3s
 			${CURL} ${GIT}base.sh | bash
 			#./scripts/ubuntu.sh
 		elif [[ ${INXI} = *GNOME* && "Distributor ID:	Debian" && (${RELEASE} = "Release:	testing" || ${RELEASE} = "Release:	11") ]]; then #Testa se é Debian GNOME
-			${INXI} ; echo -e "\n${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && sleep 3s
+			${INXI} ; echo -e "${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && sleep 3s
 			${CURL} ${GIT}base.sh | bash
 			#./scripts/debiangnome.sh
 		elif [[ ${INXI} = *GNOME* && ${INXI} = *Fedora* ]]; then
-			${INXI} ; echo -e "\n${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && sleep 3s
+			${INXI} ; echo -e "${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && sleep 3s
 			${CURL} ${GIT}base.sh | bash
 			#./scripts/fedora.sh
 		else	
