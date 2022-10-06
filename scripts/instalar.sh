@@ -19,7 +19,7 @@ CURL='curl -s'			#Comando para execução do scritp, sem baixar
 
 # Verificação da distro base
 VERI () {
-		if [[ ${INXI} = *Xfce* && ${INXI} = ${VERU} && ${INXI} = *Ubuntu* ]]; then #Testa se é Xubuntu
+		if [[ ${INXI} = *Xfce* && ${INXI} = *22.04* && ${INXI} = *Ubuntu* ]]; then #Testa se é Xubuntu
 			echo -e "${VERD}[*] Sistema suportado, instalação seguirá" ${NORM}
 			inxi -S
 			${CURL} ${GIT}base.sh | bash && ${CURL} ${GIT}xubuntu.sh | bash
