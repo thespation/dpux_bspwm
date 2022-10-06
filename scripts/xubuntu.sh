@@ -43,7 +43,8 @@ PNEOF () {
 PTHUN () {
 	if [[ -d "${PASTA}Thunar" ]]; then
 		echo -e "\n${CIAN}[ ] Fazendo backup da pasta ${PASTA}Thunar" ${NORM}
-		mv ${PASTA}Thunar ${PASTA}Thunar.bkp.${DATA}	
+		mv ${PASTA}Thunar ${PASTA}Thunar.bkp.${DATA}
+		${COP} ${PASTA}Thunar.bkp.${DATA}/bookmarks ${PASTA}Thunar #Copia os atalhos personalizados do thunar
 		echo -e "${VERD}[*] Backup realizado com sucesso" ${NORM}
 	fi
 }
