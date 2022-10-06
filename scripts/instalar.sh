@@ -5,6 +5,7 @@
 # Cores (tabela de cores: https://gist.github.com/avelino/3188137)
 VERM="\033[1;31m"	#Deixa a saída na cor vermelho
 VERD="\033[0;32m"	#Deixa a saída na cor verde
+CIAN="\033[0;36m"	#Deixa a saída na cor ciano
 NORM="\033[0m"		#Volta para a cor padrão
 
 set -e #Termina, em caso de erro de execução
@@ -21,7 +22,7 @@ VERI () {
 	RELEASE=`lsb_release -r`	#Identifica a versão da distro
 		if [[ $INXI = *Xfce* && $INXI = $VERU && $INXI = *Ubuntu* ]]; then #Testa se é Xubuntu
 			echo -e "${VERD}[*] Sistema suportado, instalação seguirá" ${NORM}
-			echo -e "$INXI"
+			echo -e "${CIAN}[ ] Xubuntu $VERU" ${NORM}
 			${CURL} ${GIT}base.sh | bash && ${CURL} ${GIT}xubuntu.sh | bash
 		elif [[ $ID = "Distributor ID:	Pop" && $RELEASE = "Release:	22.04" ]]; then #Testa se é o PopOs
 			${INXI} ; echo -e "${VERD}[*] Sistema suportado, instalação seguirá" ${NORM} && sleep 3s
