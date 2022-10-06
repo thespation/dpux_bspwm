@@ -10,7 +10,7 @@ NORM="\033[0m"		#Volta para a cor padrão
 set -e #Termina, em caso de erro de execução
 
 # Alias de identificação de distro
-INXI=`inxi -S` 			#Necessário para identifiar a DE (xfce ou gnome)
+INXI='inxi -S' 			#Necessário para identifiar a DE (xfce ou gnome)
 RELEASE=`lsb_release -r`	#Identifica a versão da distro
 VERU="*22.04*" 			#Utual versão do Ubuntu
 ID=`lsb_release -i`		#Identifica qual distro é
