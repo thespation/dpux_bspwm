@@ -76,7 +76,7 @@ PGEANY () {
 PGTK3 () {
 	if [[ -d "${PASTA}gtk-3.0" ]]; then
 		echo -e "\n${CIAN}[ ] Fazendo backup da pasta ${PASTA}gtk-3.0" ${NORM}
-		mv ${PASTA}gtk-3.0 ${PASTA}gtk-3.0.bkp.${DATA}
+		mv ${PASTA}gtk-3.0 ${PASTA}gtk-3.0.bkp.${DATA} && mkdir -p ${PASTA}gtk-3.0
 		${COP} ${PASTA}gtk-3.0.bkp.*/bookmarks ${PASTA}gtk-3.0/bookmarks 	#Copia os atalhos personalizados do thunar
 		echo -e "${VERD}[*] Backup realizado com sucesso" ${NORM}
 	fi
