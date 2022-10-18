@@ -20,17 +20,17 @@ MENU () {
 	echo -e "[3] Instalar apenas os temas" 
 	echo -e "[4] Instalar todos os ícones e temas" 
 	echo -e "${VERM}[5] Sair\n" ${NORM}
-	read -p "[?] Digite a opção desejada: "
+	read -p "[?] Digite a opção desejada: " RESPOSTA
 
-	if [[ $REPLY == "1" ]]; then
+	if [[ $RESPOSTA == "1" ]]; then
 		BSPWMPERS
-	elif [[ $REPLY == "2" ]]; then
+	elif [[ $RESPOSTA == "2" ]]; then
 		ICONS
-	elif [[ $REPLY == "3" ]]; then
+	elif [[ $RESPOSTA == "3" ]]; then
 		TEMAS
-	elif [[ $REPLY == "4" ]]; then
+	elif [[ $RESPOSTA == "4" ]]; then
 		ICOTHE
-	elif [[ $REPLY == "5" ]]; then
+	elif [[ $RESPOSTA == "5" ]]; then
 		exit 1
 	else
 		echo -e "\n${VERM}Opção desconhecida\n" ${NORM} ; echo ;  MENU
