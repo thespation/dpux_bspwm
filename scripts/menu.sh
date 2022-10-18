@@ -39,7 +39,7 @@ MENU () {
 
 #Caso seja escolhida a opção [1] base bspwm
 BSPWMPERS () {
-	${CURL} ${GIT}base.sh | bash
+	${CURL} ${GIT}instalar.sh | bash
 	MENU
 }
 
