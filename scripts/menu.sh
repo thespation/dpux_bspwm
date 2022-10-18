@@ -22,22 +22,22 @@ MENU () {
 	echo -e "${VERM}[5] Sair\n" ${NORM}
 	read -p "[?] Digite a opção desejada: " RESPOSTA
 
-	if [[ $RESPOSTA == "1" ]]; then
+	  if [[ $RESPOSTA = "1" ]]; then
 		BSPWMPERS
-	elif [[ $RESPOSTA == "2" ]]; then
+	elif [[ $RESPOSTA = "2" ]]; then
 		ICONS
-	elif [[ $RESPOSTA == "3" ]]; then
+	elif [[ $RESPOSTA = "3" ]]; then
 		TEMAS
-	elif [[ $RESPOSTA == "4" ]]; then
+	elif [[ $RESPOSTA = "4" ]]; then
 		ICOTHE
-	elif [[ $RESPOSTA == "5" ]]; then
+	elif [[ $RESPOSTA = "5" ]]; then
 		exit 1
 	else
 		echo -e "\n${VERM}Opção desconhecida\n" ${NORM} ; echo ;  MENU
 	fi
 }
 
-#Caso seja escolhida a opção [1] base bspwm
+#Caso seja escolhida a opção [1]
 BSPWMPERS () {
 	${CURL} ${GIT}instalar.sh | bash
 	MENU
