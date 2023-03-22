@@ -22,19 +22,14 @@ MENU () {
 	echo -e "${VERM}[5] Sair\n" ${NORM}
 	read -p "[?] Digite a opção desejada: " RESPOSTA
 
-	  if [[ $RESPOSTA = "1" ]]; then
-		BSPWMPERS
-	elif [[ $RESPOSTA = "2" ]]; then
-		ICONS
-	elif [[ $RESPOSTA = "3" ]]; then
-		TEMAS
-	elif [[ $RESPOSTA = "4" ]]; then
-		ICOTHE
-	elif [[ $RESPOSTA = "5" ]]; then
-		exit 1
-	else
-		echo -e "\n${VERM}Opção desconhecida\n" ${NORM} ; echo ;  MENU
-	fi
+	case $RESPOSTA in
+    	1) BSPWMPERS ;;
+    	2) ICONS ;;
+    	3) TEMAS ;;
+    	4) ICOTHE ;;
+    	5) exit 1 ;;
+    	*) echo -e "\n${VERM}Opção desconhecida\n" ${NORM} ; echo ;  MENU ;;
+  esac
 }
 
 #Caso seja escolhida a opção [1]
