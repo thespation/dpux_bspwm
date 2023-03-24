@@ -10,7 +10,7 @@ NORM="\033[0m"		#Volta para a cor padrão
 
 ## Alias
 TEMPTHEME="/tmp/archcraft-themes"	#Pasta temporária dos temas
-FINALTHEME="$HOME/.themes"			#Pasta dos temas do sistema
+FINALTHEME="$HOME/.themes"		#Pasta dos temas do sistema
 
 #Testar se já baixou os temas	
 if [[ -d "${TEMPTHEME}" ]]; then #Verifica se existe a pasta temporária dos temas
