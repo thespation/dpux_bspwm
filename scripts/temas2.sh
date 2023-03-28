@@ -27,7 +27,7 @@ fi
 # COPTEMA - copia os temas para de temas do usuário	
 COPTEMA () {
 	echo -e "\n${CIAN}[ ] Copiando os temas para" $FINALTHEME ${NORM} # Copiando os temas para a pasta de temas "/usr/share/themes"
-		mkdir -p ${FINALTHEME} && sudo cp -rf ${TEMPTHEME}/*/files/* ${FINALTHEME}
+		sudo cp -rf ${TEMPTHEME}/*/files/* ${FINALTHEME}
 	if [[ -d "${FINALTHEME}/Spark" || "${FINALTHEME}/Sweet-Dark" ]]; then #Verifica se as pastas estão no lugar certo
 		ls $FINALTHEME #Exibe a pasta de temas
 		echo -e "${VERD}[*] Temas copiados para a pasta" $FINALTHEME ${NORM} #Notifica sucesso
