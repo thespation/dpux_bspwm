@@ -10,26 +10,30 @@ NORM="\033[0m"		#Volta para a cor padrão
 
 ## Alias
 TEMPTHEME="/tmp/archcraft-themes"	#Pasta temporária dos temas
-FINALTHEME="$HOME/.themes"		#Pasta dos temas do sistema
+FINALTHEME="/usr/share/themes/"		#Pasta dos temas do sistema
 
 #Testar se já baixou os temas	
+BAIXARTEMA () {
 if [[ -d "${TEMPTHEME}" ]]; then #Verifica se existe a pasta temporária dos temas
-		INSTEMA
+		COPTEMA
 	else
 		echo -e "\n${CIAN}[ ] Baixando os temas para" ${TEMPTHEME} ${NORM}
-		cd /tmp && git clone https://github.com/archcraft-os/archcraft-themes &&
+		cd /tmp && git clone https://github.com/archcraft-os/archcraft-themes
+		chmod 755 archcraft-themes/* -R #Concede permissão à pasta baixada
 		echo -e "${VERD}[*] Temas na pasta" ${TEMPTHEME} ${NORM}
-		INSTEMA
+		COPTEMA
 fi
-
-# INSTEMA - copia os temas para de temas do usuário	
-INSTEMA () {
+}
+# COPTEMA - copia os temas para de temas do usuário	
+COPTEMA () {
 	echo -e "\n${CIAN}[ ] Copiando os temas para" $FINALTHEME ${NORM} # Copiando os temas para a pasta de temas "/usr/share/themes"
-		cp -rf TEMPTHEME/*/files/* $FINALTHEME
-	if [[ -d "$FINALTHEME/Spark" || "$FINALTHEME/Sweet-Dark" ]]; then #Verifica se as pastas estão no lugar certo
+		mkdir -p ${FINALTHEME} && sudo cp -rf ${TEMPTHEME}/*/files/* ${FINALTHEME}
+	if [[ -d "${FINALTHEME}/Spark" || "${FINALTHEME}/Sweet-Dark" ]]; then #Verifica se as pastas estão no lugar certo
 		ls $FINALTHEME #Exibe a pasta de temas
 		echo -e "${VERD}[*] Temas copiados para a pasta" $FINALTHEME ${NORM} #Notifica sucesso
 	else
 		echo -e "\n${VERM}[!] Não foi possível copiar os temas\n" ${NORM} #Notifica em caso de falha
 	fi
 }
+# Iniciar verificação, download e cópia dos arquivos
+BAIXARTEMA
