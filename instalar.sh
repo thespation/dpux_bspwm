@@ -30,7 +30,7 @@ function VERIF_DISTRIB()
 			APPS_POP
 			PERSONA_POP
 
-		elif [[ $INXI = *Xfce* && "Distributor ID:	Debian" && ($RELEASE = "Release:	testing" || $RELEASE = "Release:	11") ]]; then
+		elif [[ $INXI = *Xfce* && "Distributor ID:	Debian" && ($RELEASE = "Release:	testing" || $RELEASE = "Release:	12") ]]; then
 			inxi -S
 			sleep 2s
 			echo "#--------------------Sistema suportado, instalação seguirá--------------------#"
