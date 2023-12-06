@@ -49,22 +49,18 @@ Para que o script rode corretamente, é necessário ter o sistema, versão e DE 
 <table align=center border="1">
     <tr>
         <th>Sistema</td>
-        <th>Versão</td>
         <th>DE</td>
     </tr>
     <tr>
         <td align="center"valign="center">Debian</td>
-        <td align="center"valign="center">Bullseye ou Bookworm</td>
         <td align="center"valign="center">Xfce ou GNOME</td>
     </tr>
     <tr>
         <td align="center"valign="center">Fedora</td>
-        <td align="center"valign="center">36*</td>
         <td rowspan="3" align="center"valign="center">GNOME</td>
     </tr>
     <tr>
         <td>Pop!_OS</td>
-        <td rowspan="3" align="center"valign="center">22.04</td>
      </tr>
      <tr>
         <td align="center"valign="center">Ubuntu</td>
