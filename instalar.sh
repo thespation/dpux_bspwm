@@ -10,7 +10,7 @@ function VERIF_DISTRIB()
 {	INXI=`inxi -S`
 	ID=`lsb_release -i`
 	RELEASE=`lsb_release -r`
-	if [[ $INXI = *Xfce* && $INXI = *22.04* && $INXI = *Ubuntu* ]]; then
+	if [[ $INXI = *Xfce* && $INXI = *Ubuntu* ]]; then
 			inxi -S
 			sleep 2s
 			echo "#--------------------Sistema suportado, instalação seguirá--------------------#"
@@ -20,7 +20,7 @@ function VERIF_DISTRIB()
 			APPS_XFCE
 			PERSONA_XUBUNTU
 		
-		elif [[ $ID = "Distributor ID:	Pop" && $RELEASE = "Release:	22.04" ]]; then
+		elif [[ $ID = "Distributor ID:	Pop" ]]; then
 			inxi -S
 			sleep 2s
 			echo "#--------------------Sistema suportado, instalação seguirá--------------------#"
@@ -30,7 +30,7 @@ function VERIF_DISTRIB()
 			APPS_POP
 			PERSONA_POP
 
-		elif [[ $INXI = *Xfce* && "Distributor ID:	Debian" && ($RELEASE = "Release:	testing" || $RELEASE = "Release:	12") ]]; then
+		elif [[ $INXI = *Xfce* && "Distributor ID:	Debian" ]]; then
 			inxi -S
 			sleep 2s
 			echo "#--------------------Sistema suportado, instalação seguirá--------------------#"
@@ -40,7 +40,7 @@ function VERIF_DISTRIB()
 			KSUPERKEY
 			PERSONA_DEBIAN
 						
-		elif [[ $INXI = *GNOME* && $INXI = *22.04* && $INXI = *Ubuntu* ]]; then
+		elif [[ $INXI = *GNOME* && $INXI = *Ubuntu* ]]; then
 		     	inxi -S
 			sleep 2s
 			echo "#--------------------Sistema suportado, instalação seguirá--------------------#"
@@ -50,7 +50,7 @@ function VERIF_DISTRIB()
 			APPS_POP
 			PERSONA_UBUNTU
 			
-		elif [[ $INXI = *GNOME* && "Distributor ID:	Debian" && ($RELEASE = "Release:	testing" || $RELEASE = "Release:	11") ]]; then
+		elif [[ $INXI = *GNOME* && "Distributor ID:	Debian" ]]; then
 			inxi -S
 			sleep 2s
 			echo "#--------------------Sistema suportado, instalação seguirá--------------------#"
@@ -405,8 +405,8 @@ function NOTF_FALHA()
 		echo "#--------Esse script foi desenvolvido para rodar nas seguintes distros:-------#"		
 		echo "#-----------------Debian Bullseye ou Bookworm (xfce e gnome)------------------#"
 		echo "#------------------------------Fedora GNOME-----------------------------------#"
-		echo "#------------------------------Pop!_Os 22.04----------------------------------#"
-		echo "#--------------------------Ubuntu ou Xubuntu 22.04----------------------------#"
+		echo "#---------------------------------Pop!_Os-------------------------------------#"
+		echo "#----------------------------Ubuntu ou Xubuntu--------------------------------#"
 		echo "#----Caso esteja usando uma das citadas, é necessário ter 'inxi' instalado----#"
 	}
 		
