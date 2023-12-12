@@ -50,7 +50,7 @@ function VERIF_DISTRIB()
 			APPS_POP
 			PERSONA_UBUNTU
 			
-		elif [[ $INXI = *GNOME* && "Distributor ID:	Debian" ]]; then
+		elif [[ $INXI = *GNOME* && $INXI = "Distributor ID:	Debian" ]]; then
 			inxi -S
 			sleep 2s
 			echo "#--------------------Sistema suportado, instalação seguirá--------------------#"
