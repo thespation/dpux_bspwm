@@ -122,7 +122,7 @@ declare -f BSPWMF
 function BSPWMF()
 	{
 			echo "#---------------------------Instalando base BSPWM----------------------------#"
-				sudo dnf install -y bspwm sxhkd rofi compton polybar dunst &&
+				sudo dnf install -y bspwm sxhkd rofi polybar dunst &&
 				clear &&
 			echo "#---------------------------Base BSPWM instalada-----------------------------#"
 				sleep 2s
